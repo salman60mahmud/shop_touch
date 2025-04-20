@@ -1,0 +1,11 @@
+.nav-menu hr {
+  border: none;  
+  width: 90%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #FF4141;
+}
+
+.nav-cart-count{
+  
+}
