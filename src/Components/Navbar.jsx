@@ -7,8 +7,9 @@ const Navbar = () => {
     return (
         <div className="flex justify-around p-16 shadow-[0_1px_3px_-2px_black]">
             <div className="flex items-center gap-10">
-                <img src="/src/media/logo.png" alt="logo" />
-                <p className="text-4xl font-bold">SHOP <br />Touch</p>
+                <Link to='/' end> <img src="/src/media/logo.png" alt="logo" /></Link>
+
+                <p className="text-4xl font-bold"> <Link to='/' end>SHOP <br />Touch</Link></p>
             </div>
             <ul className="flex items-center list-none gap-20 text-neutral-600 text-2xl font-semibold cursor-pointer nav-menu">
                 <li className="nav-item">
