@@ -7,3 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-family: poppins;
 }
+
+html {
+    overflow-y: scroll;
+    /* Force scrollbar */
+    margin-left: calc(99vw - 100%);
+    /* Compensate for scrollbar */
+}

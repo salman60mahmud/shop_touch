@@ -5,8 +5,8 @@ const Navbar = () => {
     const location = useLocation();
 
     return (
-        <div className="flex justify-around p-16 shadow-[0_1px_3px_-2px_black]">
-            <div className="flex items-center gap-10">
+        <div className="flex justify-between p-16 shadow-[0_1px_3px_-2px_black]">
+            <div className="flex gap-10">
                 <Link to='/' end> <img src="/src/media/logo.png" alt="logo" /></Link>
 
                 <p className="text-4xl font-bold"> <Link to='/' end>SHOP <br />Touch</Link></p>
