@@ -8,13 +8,13 @@ const Items = () => {
   if (loading) return <div>Loading products...</div>;
 
   return (
-    <div>
-      <h1 className="text-5xl font-medium text-center mt-20 mb-8">POPULAR IN WOMEN</h1>
-      <hr />
+    <div className="flex flex-col items-center">
+      <h1 className="text-5xl font-medium mt-28">POPULAR IN WOMEN</h1>
+      <hr className="horizontal"/>
 
-      <div className="flex justify-center gap-28">
+      <div className="flex justify-center mt-20 gap-10">
 
-        {data?.map (data => (
+        {data?.map(data => (
           <div className="items">
             <img src={data.image} alt="data_image" />
             <p>{data.name}</p>

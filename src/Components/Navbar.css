@@ -1,18 +1,19 @@
   .nav-menu hr {
-border: none;  
-  width: 130%;
-  height: 4px;
-  border-radius: 10px;
-  background-color: #FF4141;
-  position: absolute;
-  bottom: -10px; 
-  left: 50%; /* Center alignment */
-  transform: translateX(-50%); /* Offset for true centering */
-}
+    border: none;
+    width: 130%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #FF4141;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Offset for true centering */
+  }
 
-.nav-item {
-  position: relative; 
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-}
+  .nav-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
