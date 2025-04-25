@@ -20,7 +20,7 @@ const Items = () => {
             <p>{data.name}</p>
             <div className="flex gap-20">
               <div className="items-prices-new">
-                ${data.new_price}
+                Price: ${data.new_price}
               </div>
               <div className="items-prices-old">
                 ${data.old_price}
