@@ -1,56 +1,56 @@
 [
   {
     "id": 12,
-    "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    "name": "Buttoned Shirt Dress with Side Slits and Belt",
     "image": "../src/media/product_12.png",
     "new_price": 50.0,
     "old_price": 80.5
   },
   {
     "id": 35,
-    "name": "Boys Orange Colourblocked Hooded Sweatshirt",
+    "name": "Boys Brown Solid Knit Full-Sleeve Cardigan",
     "image": "../src/media/product_35.png",
     "new_price": 85.0,
     "old_price": 120.5
   },
   {
     "id": 14,
-    "name": "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    "name": "Men Navy Blue Distressed Mid-Rise Slim Fit Jeans",
     "image": "../src/media/product_14.png",
     "new_price": 60.0,
     "old_price": 100.5
   },
   {
     "id": 8,
-    "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    "name": "High Neck Satin Blouse with Keyhole Back",
     "image": "../src/media/product_8.png",
     "new_price": 100.0,
     "old_price": 150.0
   },
   {
     "id": 15,
-    "name": "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    "name": "Men Olive Green Solid Hooded Lightweight Windcheater",
     "image": "../src/media/product_15.png",
     "new_price": 50.0,
     "old_price": 80.5
   },
   {
     "id": 2,
-    "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    "name": "Ruffled V-Neck Wrap Waist Chiffon Midi Dress",
     "image": "../src/media/product_2.png",
     "new_price": 85.0,
     "old_price": 120.5
   },
   {
     "id": 17,
-    "name": "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    "name": "Men Grey Solid Ribbed Collar Zip-Front Sweatshirt",
     "image": "../src/media/product_17.png",
     "new_price": 60.0,
     "old_price": 100.5
   },
   {
     "id": 28,
-    "name": "Boys Orange Colourblocked Hooded Sweatshirt",
+    "name": "Boys Red and Navy Striped Polo Collar T-Shirt",
     "image": "../src/media/product_28.png",
     "new_price": 100.0,
     "old_price": 150.0

@@ -10,7 +10,7 @@ const Items = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-5xl font-medium mt-28">POPULAR IN WOMEN</h1>
-      <hr className="horizontal"/>
+      <hr className="horizontal" />
 
       <div className="flex justify-center mt-20 gap-10">
 
@@ -20,12 +20,11 @@ const Items = () => {
             <p>{data.name}</p>
             <div className="flex gap-20">
               <div className="items-prices-new">
-                {data.new_price}
+                ${data.new_price}
               </div>
               <div className="items-prices-old">
-                {data.old_price}
+                ${data.old_price}
               </div>
-
             </div>
           </div>
         ))}

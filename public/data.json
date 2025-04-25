@@ -8,21 +8,21 @@
   },
   {
     "id": 2,
-    "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    "name": "Ruffled V-Neck Wrap Waist Chiffon Midi Dress",
     "image": "../src/media/product_2.png",
     "new_price": 85.00,
     "old_price": 120.50
   },
   {
     "id": 3,
-    "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    "name": "Floral Print Tiered Skirt Off-Shoulder Sundress",
     "image": "../src/media/product_3.png",
     "new_price": 60.00,
-    "ld_price": 100.50
+    "old_price": 100.50
   },
   {
     "id": 4,
-    "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    "name": "Lace Panel Button-Front Empire Waist Tunic",
     "image": "../src/media/product_4.png",
     "new_price": 100.00,
     "old_price": 150.00

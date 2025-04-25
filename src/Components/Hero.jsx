@@ -14,7 +14,7 @@ const Hero = () => {
                     <p className="text-7xl font-semibold mt-4">Collections</p>
                     <p className="text-7xl font-semibold mt-6">For Everyone</p>
                 </div>
-                <button className="flex justify-center align-items gap-4 btn btn-secondary hover:bg-secondary-content hover:text-secondary h-16 w-md rounded-4xl">
+                <button className="flex justify-center gap-4 btn btn-secondary hover:bg-secondary-content hover:text-secondary h-16 w-md rounded-4xl">
                     <div className="text-4xl font-medium">Latest Collection</div>
                     <p className="text-4xl"><FaArrowRight /></p>
                 </button>
