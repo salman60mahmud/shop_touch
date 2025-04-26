@@ -10,17 +10,16 @@ const ShopCategory = ({ banner, category }) => {
 
   return (
     <div className="shop-category">
-      <img src={banner} alt={`${category} banner`} />
-      <div className="shopCategory-indexSort">
-        <p>
-          <span>Showing 1-12</span> Out Of 36 Products
+      <img className="block w-3/4 mx-auto my-10" src={banner} alt={`${category} banner`} />
+      <div className="flex justify-between mx-60">
+        <p className="text-xl">
+          <span className="font-semibold">Showing 1-12</span> Out Of 36 Products
         </p>
-        <div className="shopCategory-sort">
-          Sort By <FaAngleDown />
-        </div>
+        <button className="btn rounded-3xl text-xl font-normal">Sort By <FaAngleDown />
+          </button>
       </div>
 
-      <div className="shopCategory-products">
+      <div className="grid grid-cols-4 gap-10 mb-30 mt-8 mx-60">
         {allProduct?.map(allProduct => {
           if (category === allProduct.category) {
             return (
