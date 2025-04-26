@@ -1,7 +1,8 @@
+import './NewsLetter.css'
 
 const NewsLetter = () => {
     return (
-        <div className="flex justify-between items-center flex-col mb-40">
+        <div className="flex justify-between items-center flex-col mb-40 p-20 background">
             <h1 className="text-5xl font-semibold">Get Exclusive Offers On Your Email</h1>
             <p className="text-3xl font-semibold mt-5">Subscribe To Our Newsletter & Stay Updated</p>
             <div className="join mt-5 relative">
