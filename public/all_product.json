@@ -195,7 +195,7 @@
   {
     "id": 25,
     "name": "Boys Orange Color Blocked Hooded Sweatshirt",
-    "category": "kid",
+    "category": "kids",
     "image": "../src/media/product_25.png",
     "new_price": 85.0,
     "old_price": 120.5
@@ -203,7 +203,7 @@
   {
     "id": 26,
     "name": "Boys Blue Printed Round Neck Cotton T-Shirt",
-    "category": "kid",
+    "category": "kids",
     "image": "../src/media/product_26.png",
     "new_price": 85.0,
     "old_price": 120.5
@@ -211,7 +211,7 @@
   {
     "id": 27,
     "name": "Boys Green Camo Patterned Full-Sleeve Jacket",
-    "category": "kid",
+    "category": "kids",
     "image":"../src/media/product_27.png",
     "new_price": 85.0,
     "old_price": 120.5
@@ -219,7 +219,7 @@
   {
     "id": 28,
     "name": "Boys Red and Navy Striped Polo Collar T-Shirt",
-    "category": "kid",
+    "category": "kids",
     "image": "../src/media/product_28.png",
     "new_price": 85.0,
     "old_price": 120.5
@@ -227,7 +227,7 @@
   {
     "id": 29,
     "name": "Boys Grey Melange Graphic Print Pullover Hoodie",
-    "category": "kid",
+    "category": "kids",
     "image": "../src/media/product_29.png",
     "new_price": 85.0,
     "old_price": 120.5
@@ -235,7 +235,7 @@
   {
     "id": 30,
     "name": "Boys Black Solid Elastic Waist Cargo Joggers",
-    "category": "kid",
+    "category": "kids",
     "image": "../src/media/product_30.png",
     "new_price": 85.0,
     "old_price": 120.5
@@ -243,7 +243,7 @@
   {
     "id": 31,
     "name": "Boys Yellow and White Checked Button-Down Shirt",
-    "category": "kid",
+    "category": "kids",
     "image": "../src/media/product_31.png",
     "new_price": 85.0,
     "old_price": 120.5
@@ -251,7 +251,7 @@
   {
     "id": 32,
     "name": "Boys Denim Blue Washed Slim Fit Jeans",
-    "category": "kid",
+    "category": "kids",
     "image": "../src/media/product_32.png",
     "new_price": 85.0,
     "old_price": 120.5
@@ -259,7 +259,7 @@
   {
     "id": 33,
     "name": "Boys Olive Green Quilted Zip-Front Puffer Jacket",
-    "category": "kid",
+    "category": "kids",
     "image": "../src/media/product_33.png",
     "new_price": 85.0,
     "old_price": 120.5
@@ -267,7 +267,7 @@
   {
     "id": 34,
     "name": "Boys Sky Blue Cartoon Print Crew Neck Sweatshirt",
-    "category": "kid",
+    "category": "kids",
     "image": "../src/media/product_34.png",
     "new_price": 85.0,
     "old_price": 120.5
@@ -275,15 +275,15 @@
   {
     "id": 35,
     "name": "Boys Brown Solid Knit Full-Sleeve Cardigan",
-    "category": "kid",
+    "category": "kids",
     "image": "../src/media/product_35.png",
     "new_price": 85.0,
     "old_price": 120.5
   },
   {
     "id": 36,
-    "name": "Boys Navy Blue Colorblock Zip-Up Track Jacket",
-    "category": "kid",
+    "name": "Boys Navy Blue Color Block Zip-Up Track Jacket",
+    "category": "kids",
     "image": "../src/media/product_36.png",
     "new_price": 85.0,
     "old_price": 120.5

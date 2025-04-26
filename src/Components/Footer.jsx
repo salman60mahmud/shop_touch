@@ -42,7 +42,7 @@ const Footer = () => {
   </footer>
   <footer>
   <aside>
-    <p className='flex flex-col items-center gap-50 w-full bg-base-300 text-2xl pb-10'>Copyright © {new Date().getFullYear()} - All right reserved by Shop Touch</p>
+    <p className='flex flex-col items-center gap-50 w-full bg-base-300 text-xl pb-10'>Copyright © {new Date().getFullYear()} - All right reserved by Shop Touch</p>
   </aside>
 </footer>
         </div>

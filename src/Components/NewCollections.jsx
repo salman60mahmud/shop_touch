@@ -8,8 +8,7 @@ const NewCollections = () => {
     if (loading) return <div>Loading products...</div>;
 
     return (
-        <div
-            className="flex flex-col items-center">
+        <div className="flex flex-col items-center">
             <h1 className="text-5xl font-medium mt-28">NEW COLLECTIONS</h1>
             <hr className="horizontal2" />
 
@@ -27,7 +26,7 @@ const NewCollections = () => {
                                 ${newCollections.old_price}
                             </div>
                         </div>
-                    </div>
+                    </div> 
 
                 ))}
 
