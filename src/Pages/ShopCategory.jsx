@@ -16,14 +16,14 @@ const ShopCategory = ({ banner, category }) => {
           <span className="font-semibold">Showing 1-12</span> Out Of 36 Products
         </p>
         <button className="btn rounded-3xl text-xl font-normal">Sort By <FaAngleDown />
-          </button>
+        </button>
       </div>
 
       <div className="grid grid-cols-4 gap-10 mb-30 mt-8 mx-60">
         {allProduct?.map(allProduct => {
           if (category === allProduct.category) {
             return (
-              <div>
+              <div className="hover:scale-125 transition-transform duration-600">
                 <img src={allProduct.image} alt="data_image" />
                 <p>{allProduct.name}</p>
                 <div className="flex gap-20">
@@ -40,6 +40,9 @@ const ShopCategory = ({ banner, category }) => {
             return null;
           }
         })}
+      </div>
+<div className="flex justify-center my-30">
+      <button className="btn rounded-3xl text-[18px] font-normal px-8 py-6 hover:translate-1 hover:scale-100 cursor-pointer">Explore More</button>
       </div>
     </div>
   );
