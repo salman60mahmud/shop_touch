@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { OurContext } from "../Context/ContextProvider";
-import './NewCollections.css'
+import './NewCollections.css';
+import { Link } from "react-router-dom";
 
 const NewCollections = () => {
     const { newCollections, loading } = useContext(OurContext);
@@ -16,7 +17,7 @@ const NewCollections = () => {
 
                 {newCollections?.map(newCollections => (
                     <div className="collections">
-                        <img src={newCollections.image} alt="data_image" />
+                       <Link to={`/products/${newCollections.id}`}> <img src={newCollections.image} alt="data_image" /></Link>
                         <p>{newCollections.name}</p>
                         <div className="flex gap-20">
                             <div className="collections-prices-new">

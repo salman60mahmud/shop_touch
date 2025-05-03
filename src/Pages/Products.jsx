@@ -1,13 +1,19 @@
-
-import { useParams } from 'react-router-dom';
+import { useContext } from "react";
+import { OurContext } from "../Context/ContextProvider";
+import { useParams } from "react-router";
+import Breadcrumbs from "../Components/Breadcrumbs";
 
 const Products = () => {
-  const { productId } = useParams();
+  const { allProduct, loading } = useContext(OurContext);
+  const { productsId } = useParams();
+  const product = allProduct.find((e) => e.id === Number(productsId));
+
+  if (loading) return <div>Loading products...</div>;
 
   return (
     <div>
-      {productId ? (
-        <h1>Product ID: {productId}</h1>
+      {product ? (
+        <Breadcrumbs products={product} />
       ) : (
         <h1>All Products</h1>
       )}

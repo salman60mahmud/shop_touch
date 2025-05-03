@@ -41,8 +41,8 @@ const ShopCategory = ({ banner, category }) => {
           }
         })}
       </div>
-<div className="flex justify-center my-30">
-      <button className="btn rounded-3xl text-[18px] font-normal px-8 py-6 hover:translate-1 hover:scale-100 cursor-pointer">Explore More</button>
+      <div className="flex justify-center my-30">
+        <button className="btn rounded-3xl text-[18px] font-normal px-8 py-6 hover:translate-1 hover:scale-100 cursor-pointer">Explore More</button>
       </div>
     </div>
   );
