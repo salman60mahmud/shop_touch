@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { OurContext } from "../Context/ContextProvider";
 import { useParams } from "react-router";
 import Breadcrumbs from "../Components/Breadcrumbs";
+import ProductDisplay from "../Components/ProductDisplay";
 
 const Products = () => {
   const { allProduct, loading } = useContext(OurContext);
@@ -15,7 +16,12 @@ const Products = () => {
       {product ? (
         <Breadcrumbs products={product} />
       ) : (
-        <h1>All Products</h1>
+        <h1>BreadCrumbs</h1>
+      )}
+      {product ? (
+        <ProductDisplay products={product} />
+      ) : (
+        <h1>Products Details</h1>
       )}
     </div>
   );

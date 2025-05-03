@@ -17,7 +17,7 @@ const NewCollections = () => {
 
                 {newCollections?.map(newCollections => (
                     <div className="collections" key={newCollections.id}>
-                       <Link to={`/products/${newCollections.id}`}> <img src={newCollections.image} alt="data_image" /></Link>
+                       <Link to={`/products/${newCollections.id}`}> <img src={newCollections.image} alt="newCollections_image" /></Link>
                         <p>{newCollections.name}</p>
                         <div className="flex gap-20">
                             <div className="collections-prices-new">
