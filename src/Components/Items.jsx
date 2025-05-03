@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { OurContext } from "../Context/ContextProvider";
 import { Link } from "react-router-dom";
-import './Items.css'
+import './Items.css';
 
 const Items = () => {
   const { data, loading } = useContext(OurContext);
@@ -15,7 +15,7 @@ const Items = () => {
 
       <div className="flex justify-center mt-20 gap-10">
         {data?.map(data => (
-          <div className="items">
+          <div className="items" key={data.id}>
             <Link to={`/products/${data.id}`}><img src={data.image} alt="data_image" /></Link>
             <p>{data.name}</p>
             <div className="flex gap-20">

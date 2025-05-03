@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { OurContext } from "../Context/ContextProvider";
 import { FaAngleDown } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 
 const ShopCategory = ({ banner, category }) => {
@@ -23,8 +24,8 @@ const ShopCategory = ({ banner, category }) => {
         {allProduct?.map(allProduct => {
           if (category === allProduct.category) {
             return (
-              <div className="hover:scale-125 transition-transform duration-600">
-                <img src={allProduct.image} alt="data_image" />
+              <div className="hover:scale-125 transition-transform duration-600" key={allProduct.name}>
+                 <Link to={`/products/${allProduct.id}`}><img src={allProduct.image} alt="data_image" /></Link>
                 <p>{allProduct.name}</p>
                 <div className="flex gap-20">
                   <div className="collections-prices-new">

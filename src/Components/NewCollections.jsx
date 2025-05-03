@@ -16,7 +16,7 @@ const NewCollections = () => {
             <div className="grid grid-cols-4 mt-20 gap-10 mb-40">
 
                 {newCollections?.map(newCollections => (
-                    <div className="collections">
+                    <div className="collections" key={newCollections.id}>
                        <Link to={`/products/${newCollections.id}`}> <img src={newCollections.image} alt="data_image" /></Link>
                         <p>{newCollections.name}</p>
                         <div className="flex gap-20">
@@ -28,7 +28,6 @@ const NewCollections = () => {
                             </div>
                         </div>
                     </div> 
-
                 ))}
 
             </div>
