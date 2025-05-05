@@ -15,26 +15,30 @@ const RelatedProducts = (props) => {
             <hr className="h-[6px] rounded-xl bg-black w-[10%]" />
             <div className="mt-12 flex gap-8 mb-10">
 
-                {newCollections?.map(newCollections => {
-                    if (category === newCollections.category) {
-                        return (
-                            <div className="lg:w-[390px] md:w-[240px]" key={newCollections.id}>
-                                <Link to={`/products/${newCollections.id}`}> <img onClick={() => window.scrollTo(0, 0)} src={newCollections.image} alt="newCollections_image" /></Link>
-                                <p>{newCollections.name}</p>
-                                <div className="flex gap-20">
-                                    <div className="collections-prices-new">
-                                        Price: ${newCollections.new_price}
+                {newCollections?.length > 0 ? (
+                    newCollections.map(newCollections => {
+                        if (category === newCollections.category) {
+                            return (
+                                <div className="lg:w-[390px] md:w-[240px]" key={newCollections.id}>
+                                    <Link to={`/products/${newCollections.id}`}> <img onClick={() => window.scrollTo(0, 0)} src={newCollections.image} alt="newCollections.name" /></Link>
+                                    <p>{newCollections.name}</p>
+                                    <div className="flex gap-20">
+                                        <div className="collections-prices-new">
+                                            Price: ${newCollections.new_price}
+                                        </div>
+                                        <div className="collections-prices-old">
+                                            ${newCollections.old_price}
+                                        </div>
                                     </div>
-                                    <div className="collections-prices-old">
-                                        ${newCollections.old_price}
-                                    </div>
-                                </div>
-                            </div>)
+                                </div>)
+                        }
+                        else {
+                            return null;
+                        }
                     }
-                    else {
-                        return null;
-                    }
-                })}
+                    )) : (
+                    <p>No related products found</p>
+                )}
             </div>
         </div>
     );

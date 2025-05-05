@@ -21,27 +21,33 @@ const ShopCategory = ({ banner, category }) => {
       </div>
 
       <div className="grid grid-cols-4 gap-10 mb-30 mt-8 mx-60">
-        {allProduct?.map(allProduct => {
-          if (category === allProduct.category) {
-            return (
-              <div className="hover:scale-125 transition-transform duration-600" key={allProduct.name}>
-                <Link to={`/products/${allProduct.id}`}><img onClick={() => window.scrollTo(0, 0)} src={allProduct.image} alt="allProduct_image" /></Link>
-                <p>{allProduct.name}</p>
-                <div className="flex gap-20">
-                  <div className="collections-prices-new">
-                    Price: ${allProduct.new_price}
+
+        {allProduct?.length > 0 ? (
+          allProduct.map(allProduct => {
+            if (category === allProduct.category) {
+              return (
+                <div className="hover:scale-125 transition-transform duration-600" key={allProduct.name}>
+                  <Link to={`/products/${allProduct.id}`}><img onClick={() => window.scrollTo(0, 0)} src={allProduct.image} alt="allProduct_image" /></Link>
+                  <p>{allProduct.name}</p>
+                  <div className="flex gap-20">
+                    <div className="collections-prices-new">
+                      Price: ${allProduct.new_price}
+                    </div>
+                    <div className="collections-prices-old">
+                      ${allProduct.old_price}
+                    </div>
                   </div>
-                  <div className="collections-prices-old">
-                    ${allProduct.old_price}
-                  </div>
-                </div>
-              </div>)
+                </div>)
+            }
+            else {
+              return null;
+            }
           }
-          else {
-            return null;
-          }
-        })}
+          )) : (
+          <p>No product found</p>
+        )}
       </div>
+
       <div className="flex justify-center my-30">
         <button className="btn rounded-3xl text-[18px] font-normal px-8 py-6 hover:translate-1 hover:scale-100 cursor-pointer">Explore More</button>
       </div>

@@ -15,20 +15,22 @@ const NewCollections = () => {
 
             <div className="grid grid-cols-4 mt-20 gap-10 mb-40">
 
-                {newCollections?.map(newCollections => (
-                    <div className="collections" key={newCollections.id}>
-                        <Link to={`/products/${newCollections.id}`}> <img onClick={() => window.scrollTo(0, 0)} src={newCollections.image} alt="newCollections_image" /></Link>
-                        <p>{newCollections.name}</p>
-                        <div className="flex gap-20">
-                            <div className="collections-prices-new">
-                                Price: ${newCollections.new_price}
+                {newCollections?.length > 0 ? (
+                    newCollections.map(newCollections => (
+                        <div className="collections" key={newCollections.id}>
+                            <Link to={`/products/${newCollections.id}`}> <img onClick={() => window.scrollTo(0, 0)} src={newCollections.image} alt="newCollections.name" /></Link>
+                            <p>{newCollections.name}</p>
+                            <div className="flex gap-20">
+                                <div className="collections-prices-new">
+                                    Price: ${newCollections.new_price}
+                                </div>
+                                <div className="collections-prices-old">
+                                    ${newCollections.old_price}
+                                </div>
                             </div>
-                            <div className="collections-prices-old">
-                                ${newCollections.old_price}
-                            </div>
-                        </div>
-                    </div>
-                ))}
+                        </div>)
+                    )) : (
+                    <p>No product found</p>)}
 
             </div>
         </div>

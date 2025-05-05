@@ -14,20 +14,24 @@ const Items = () => {
       <hr className="horizontal" />
 
       <div className="flex justify-center mt-20 gap-10">
-        {data?.map(data => (
-          <div className="items" key={data.id}>
-            <Link to={`/products/${data.id}`}><img onClick={() => window.scrollTo(0, 0)} src={data.image} alt="data_image" /></Link>
-            <p>{data.name}</p>
-            <div className="flex gap-20">
-              <div className="items-prices-new">
-                Price: ${data.new_price}
+
+        {data?.length > 0 ? (
+          data.map(data => (
+            <div className="items" key={data.id}>
+              <Link to={`/products/${data.id}`}><img onClick={() => window.scrollTo(0, 0)} src={data.image} alt="data.name" /></Link>
+              <p>{data.name}</p>
+              <div className="flex gap-20">
+                <div className="items-prices-new">
+                  Price: ${data.new_price}
+                </div>
+                <div className="items-prices-old">
+                  ${data.old_price}
+                </div>
               </div>
-              <div className="items-prices-old">
-                ${data.old_price}
-              </div>
-            </div>
-          </div>
-        ))}
+            </div>)
+          )) : (
+          <p>No popular products found</p>
+        )}
       </div>
     </div>
   );
