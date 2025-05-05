@@ -6,7 +6,7 @@ const ProductDisplay = (props) => {
     const { products } = props;
 
     return (
-        <div className="flex mx-30 my-8">
+        <div className="flex mx-30 my-9">
             <div className="flex gap-4">
                 <div className="flex flex-col gap-3">
                     <img className="h-[166px] w-48" src={products.image} alt="allProduct_image" />
@@ -46,9 +46,10 @@ const ProductDisplay = (props) => {
                             <div className="py-1 px-6 border-1 rounded-lg cursor-pointer bg-slate-100">XXL</div>
                         </div>
                     </div>
-                    <button className="btn text-white bg-orange-600 h-12 w-48 text-[16px] mb-6">ADD TO CART</button>
-                    <p><span>Category: </span>Women, T-Shirt, Crop Top</p>
-                    <p><span>Tags: </span>Modern, Latest</p>
+                    <button className="btn text-white bg-orange-600 h-12 w-48 text-[16px] mb-8">ADD TO CART</button>
+                    <p><span className="font-semibold">Category: </span>{products.category.charAt(0).toUpperCase() +
+                        products.category.slice(1).toLowerCase()}, T-Shirt, Crop Top</p>
+                    <p className="mt-2"><span className="font-semibold">Tags: </span> Modern, Latest</p>
                 </div>
             </div>
         </div>
