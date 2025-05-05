@@ -10,10 +10,10 @@ const Items = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className="text-5xl font-medium mt-28">POPULAR IN WOMEN</h1>
+      <h1 className="text-5xl sm:text-3xl font-medium mt-28">POPULAR IN WOMEN</h1>
       <hr className="horizontal" />
 
-      <div className="flex justify-center mt-20 gap-10">
+      <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:mt-20 sm:mt-8 xl:gap-10 sm:gap-6 xl:mx-30 sm:mx-20">
 
         {data?.length > 0 ? (
           data.map(data => (

@@ -10,17 +10,17 @@ const ShopCategory = ({ banner, category }) => {
   if (loading) return <div>Loading products...</div>;
 
   return (
-    <div className="shop-category">
-      <img className="block w-3/4 mx-auto my-10" src={banner} alt={`${category} banner`} />
-      <div className="flex justify-between mx-60">
-        <p className="text-xl">
+    <div>
+      <img className="block xl:w-3/4 sm:w-4/5 mx-auto xl:my-10 sm:my-5" src={banner} alt={`${category} banner`} />
+      <div className="flex xl:justify-between sm:justify-around gap-24 xl:mx-60 sm:mx-4">
+        <p className="md:text-xl">
           <span className="font-semibold">Showing 1-12</span> Out Of 36 Products
         </p>
-        <button className="btn rounded-3xl text-xl font-normal">Sort By <FaAngleDown />
+        <button className="btn rounded-3xl md:text-xl font-normal">Sort By <FaAngleDown />
         </button>
       </div>
 
-      <div className="grid grid-cols-4 gap-10 mb-30 mt-8 mx-60">
+      <div className="grid xl:grid-cols-4 sm:grid-cols-2 xl:gap-10 sm:gap-6 xl:mb-30 sm:mn-18 xl:mt-8 sm:mt-4 xl:mx-60 sm:mx-20">
 
         {allProduct?.length > 0 ? (
           allProduct.map(allProduct => {
@@ -48,8 +48,8 @@ const ShopCategory = ({ banner, category }) => {
         )}
       </div>
 
-      <div className="flex justify-center my-30">
-        <button className="btn rounded-3xl text-[18px] font-normal px-8 py-6 hover:translate-1 hover:scale-100 cursor-pointer">Explore More</button>
+      <div className="flex justify-center xl:my-30 sm:my-14 my-10">
+        <button className="btn rounded-3xl xl:text-[18px] sm:text-[16px] xl:font-semibold sm:font-medium px-8 py-6 hover:translate-1 hover:scale-100 cursor-pointer">Explore More</button>
       </div>
     </div>
   );
