@@ -16,7 +16,7 @@ const Items = () => {
       <div className="flex justify-center mt-20 gap-10">
         {data?.map(data => (
           <div className="items" key={data.id}>
-            <Link to={`/products/${data.id}`}><img src={data.image} alt="data_image" /></Link>
+            <Link to={`/products/${data.id}`}><img onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} src={data.image} alt="data_image" /></Link>
             <p>{data.name}</p>
             <div className="flex gap-20">
               <div className="items-prices-new">
