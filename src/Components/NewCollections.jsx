@@ -17,7 +17,7 @@ const NewCollections = () => {
 
                 {newCollections?.map(newCollections => (
                     <div className="collections" key={newCollections.id}>
-                       <Link to={`/products/${newCollections.id}`}> <img onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} src={newCollections.image} alt="newCollections_image" /></Link>
+                        <Link to={`/products/${newCollections.id}`}> <img onClick={() => window.scrollTo(0, 0)} src={newCollections.image} alt="newCollections_image" /></Link>
                         <p>{newCollections.name}</p>
                         <div className="flex gap-20">
                             <div className="collections-prices-new">
@@ -27,7 +27,7 @@ const NewCollections = () => {
                                 ${newCollections.old_price}
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 ))}
 
             </div>

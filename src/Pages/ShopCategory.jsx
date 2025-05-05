@@ -25,7 +25,7 @@ const ShopCategory = ({ banner, category }) => {
           if (category === allProduct.category) {
             return (
               <div className="hover:scale-125 transition-transform duration-600" key={allProduct.name}>
-                 <Link to={`/products/${allProduct.id}`}><img onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} src={allProduct.image} alt="allProduct_image" /></Link>
+                <Link to={`/products/${allProduct.id}`}><img onClick={() => window.scrollTo(0, 0)} src={allProduct.image} alt="allProduct_image" /></Link>
                 <p>{allProduct.name}</p>
                 <div className="flex gap-20">
                   <div className="collections-prices-new">

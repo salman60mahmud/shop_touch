@@ -31,7 +31,7 @@ const Products = () => {
         <h1>Products Descriptions</h1>
       )}
       {product ? (
-        <RelatedProducts products={product} />
+        <RelatedProducts category={product.category} />
       ) : (
         <h1> Related Products</h1>
       )}
