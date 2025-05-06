@@ -10,10 +10,10 @@ const NewCollections = () => {
 
     return (
         <div className="flex flex-col items-center">
-            <h1 className="xl:text-5xl sm:text-3xl font-medium mt-28">NEW COLLECTIONS</h1>
+            <h1 className="xl:text-5xl sm:text-3xl text-2xl font-medium">NEW COLLECTIONS</h1>
             <hr className="horizontal2" />
 
-            <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:mt-20 sm:mt-8 xl:gap-10 sm:gap-6 xl:mx-30 sm:mx-20">
+            <div className="grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:mt-20 sm:mt-8 mt-5 xl:gap-10 sm:gap-6 gap-4 xl:mx-30 sm:mx-20 mx-10">
 
                 {newCollections?.length > 0 ? (
                     newCollections.map(newCollections => (

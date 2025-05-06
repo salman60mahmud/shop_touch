@@ -2,8 +2,8 @@
 
 const LoginSignup = () => {
     return (
-        <div className="flex justify-center gap-10">
-        <div className="mt-10 mb-20">
+        <div className="flex lg:justify-between items-center md:flex-col xl:gap-10 md:gap-4 mx-14">
+        <div className="mt-10 lg:mb-20 mb-5">
              <h4 className="text-[16px] mb-3">Start Your Journey</h4>
              <h2 className="text-2xl font-semibold mb-10">Sign Up To SHOP Touch</h2>
             <fieldset className="fieldset w-[350px] bg-base-200 border-base-300 rounded-box border p-4">
@@ -26,7 +26,7 @@ const LoginSignup = () => {
             </fieldset>
         </div>
         <div>
-            <img src="/src/media/signup-cover.png" alt="signup-cover" />
+            <img className="hidden md:block" src="/src/media/signup-cover.png" alt="signup-cover" />
         </div>
         </div>
     );
