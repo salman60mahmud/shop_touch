@@ -6,12 +6,12 @@ const NewsLetter = () => {
             
             <div className="join mt-5">
                 <div>
-                    <label className="input validator join-item rounded-l-xl sm:w-full lg:w-96 sm:h-14 px-4 sm:px-6 text-lg">
+                    <label className="input validator join-item rounded-l-xl sm:w-full lg:w-96 sm:h-14 px-4 sm:px-6 sm:text-lg">
                         <input type="email" placeholder="Enter Your Email" required />
                     </label>
                     <div className="validator-hint hidden">Enter valid email address</div>
                 </div>
-                <button className="btn btn-neutral join-item rounded-r-2xl w-32 sm:w-40 sm:h-14 text-lg font-medium">Subscription</button>
+                <button className="btn btn-neutral join-item rounded-r-2xl w-32 sm:w-40 sm:h-14 sm:text-lg font-medium">Subscription</button>
             </div>
         </div>
     );

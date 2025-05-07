@@ -13,7 +13,7 @@ const RelatedProducts = (props) => {
         <div className="flex flex-col items-center gap-2">
             <h1 className="xl:text-5xl sm:text-4xl text-2xl font-medium">Related Products</h1>
             <hr className="h-[6px] rounded-xl bg-black w-[10%]" />
-            <div className="xl:mt-12 sm:mt-8 mt-4 grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:gap-8 sm:gap-6 mb-10 xl:mx-20 sm:mx-14">
+            <div className="xl:mt-12 sm:mt-8 mt-4 grid xl:grid-cols-4 sm:grid-cols-2 grid-cols-1 xl:gap-8 sm:gap-6 mb-10">
 
                 {newCollections?.length > 0 ? (
                     newCollections.map(newCollections => {
