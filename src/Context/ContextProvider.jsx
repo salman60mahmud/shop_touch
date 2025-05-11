@@ -7,6 +7,7 @@ const ContextProvider = ({ children }) => {
   const [data, setData] = useState([]);
   const [newCollections, setNewCollections] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [cartItems, setCartItems] = useState({});
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,6 +27,7 @@ const ContextProvider = ({ children }) => {
         setAllProduct(products);
         setData(data);
         setNewCollections(collections);
+        setCartItems(getDefaultCart(products));
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -36,11 +38,30 @@ const ContextProvider = ({ children }) => {
     fetchData();
   }, []);
 
+  const getDefaultCart = (products) => {
+    let cart = {};
+    for (let index = 0; index < products.length + 1; index++) {
+      cart[index] = 0;
+    }
+    return cart;
+  }
+
+  const addToCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
+  }
+
+  const removeFromCart = (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: Math.max(prev[itemId] - 1, 0) }))
+  }
+
   const contextValue = {
     allProduct,
     data,
     newCollections,
-    loading
+    loading,
+    cartItems,
+    addToCart,
+    removeFromCart
   };
 
   return (
