@@ -28,7 +28,7 @@ const NewCollections = () => {
                                     ${newCollections.old_price}
                                 </div>
                             </div>
-                        </div>)
+                        </div>) 
                     )) : (
                     <p>No product found</p>)}
 

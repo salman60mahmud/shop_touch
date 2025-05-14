@@ -5,7 +5,9 @@ import { OurContext } from "../Context/ContextProvider";
 
 const ProductDisplay = (props) => {
     const { products } = props;
-    const { addToCart } = useContext(OurContext);
+    const { addToCart, loading } = useContext(OurContext);
+
+    if (loading) return <div>Loading products...</div>;
 
     return (
         <div className="flex flex-col lg:flex-row mx-4 sm:mx-8 md:mx-16 lg:mx-30 my-6 sm:my-9 gap-6">
