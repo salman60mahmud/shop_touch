@@ -1,8 +1,13 @@
+import { useContext } from "react";
 import "./Navbar.css"
 import { Link, useLocation } from 'react-router-dom';
+import { OurContext } from "../Context/ContextProvider";
 
 const Navbar = () => {
     const location = useLocation();
+    const {getTotalCartItems, loading}= useContext(OurContext);
+
+        if (loading) return <div>Loading products...</div>;
 
     return (
         <div className="navbar bg-base-100 shadow-sm p-4 lg:p-16">
@@ -69,7 +74,7 @@ const Navbar = () => {
                 <div className="flex items-center">
                     <Link to='/cart'>
                         <img src="/src/media/cart_icon.png" alt="cart-icon" />
-                        <div className="badge badge-sm rounded-xl badge-secondary -mt-24 ml-6">0</div>
+                        <div className="badge badge-sm rounded-4xl bg-[#EA580C] text-white font-semibold border-0 -mt-24 ml-6">{getTotalCartItems()}</div>
                     </Link>
                 </div>
             </div>

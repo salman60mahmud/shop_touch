@@ -7,7 +7,16 @@ const ContextProvider = ({ children }) => {
   const [data, setData] = useState([]);
   const [newCollections, setNewCollections] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [cartItems, setCartItems] = useState({});
+
+  const [cartItems, setCartItems] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const savedCart = localStorage.getItem('cartItems');
+      if (savedCart) {
+        return JSON.parse(savedCart);
+      }
+    }
+    return {}; // Initialize as empty if no saved cart
+  });
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,7 +36,14 @@ const ContextProvider = ({ children }) => {
         setAllProduct(products);
         setData(data);
         setNewCollections(collections);
-        setCartItems(getDefaultCart(products));
+        // Initialize cart items based on fetched products if it was initially empty
+        if (Object.keys(cartItems).length === 0 && products.length > 0) {
+          const initialCart = {};
+          products.forEach(product => {
+            initialCart[product.id] = 0;
+          });
+          setCartItems(initialCart);
+        }
       } catch (error) {
         console.error("Error fetching data:", error);
       } finally {
@@ -38,33 +54,41 @@ const ContextProvider = ({ children }) => {
     fetchData();
   }, []);
 
-  const getDefaultCart = (products) => {
-    let cart = {};
-    for (let index = 0; index < products.length + 1; index++) {
-      cart[index] = 0;
+  // This effect saves cart items to localStorage whenever they change
+  useEffect(() => {
+    if (Object.keys(cartItems).length > 0 && typeof window !== 'undefined') {
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
     }
-    return cart;
-  }
+  }, [cartItems]);
 
   const addToCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }))
+    setCartItems((prev) => ({ ...prev, [itemId]: (prev[itemId] || 0) + 1 }));
   }
 
   const removeFromCart = (itemId) => {
-    setCartItems((prev) => ({ ...prev, [itemId]: Math.max(prev[itemId] - 1, 0) }))
+    setCartItems((prev) => ({ ...prev, [itemId]: Math.max((prev[itemId] || 0) - 1, 0) }));
   }
 
   const getTotalCartAmount = () => {
     let totalAmount = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
-        let itemInfo = allProduct.find((products) => products.id === Number(item))
+        let itemInfo = allProduct.find((products) => products.id === Number(item));
         if (itemInfo) {
           totalAmount += itemInfo.new_price * cartItems[item];
         }
       }
     }
     return totalAmount;
+  }
+  const getTotalCartItems = () => {
+    let totalItems = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        totalItems += cartItems[item];
+      }
+    }
+    return totalItems;
   }
 
   const contextValue = {
@@ -75,7 +99,8 @@ const ContextProvider = ({ children }) => {
     cartItems,
     addToCart,
     removeFromCart,
-    getTotalCartAmount
+    getTotalCartAmount,
+    getTotalCartItems
   };
 
   return (
