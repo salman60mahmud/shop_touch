@@ -54,6 +54,19 @@ const ContextProvider = ({ children }) => {
     setCartItems((prev) => ({ ...prev, [itemId]: Math.max(prev[itemId] - 1, 0) }))
   }
 
+  const getTotalCartAmount = () => {
+    let totalAmount = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        let itemInfo = allProduct.find((products) => products.id === Number(item))
+        if (itemInfo) {
+          totalAmount += itemInfo.new_price * cartItems[item];
+        }
+      }
+    }
+    return totalAmount;
+  }
+
   const contextValue = {
     allProduct,
     data,
@@ -61,7 +74,8 @@ const ContextProvider = ({ children }) => {
     loading,
     cartItems,
     addToCart,
-    removeFromCart
+    removeFromCart,
+    getTotalCartAmount
   };
 
   return (
