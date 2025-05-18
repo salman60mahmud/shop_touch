@@ -67,7 +67,7 @@ const Navbar = () => {
             {/* Right side buttons - visible on all screens */}
             <div className="navbar-end gap-4 lg:gap-16">
                 <Link to='/login' className="hidden sm:inline-flex">
-                    <button className="btn btn-outline btn-secondary h-12 w-36 text-2xl rounded-3xl">
+                    <button className="btn btn-outline btn-secondary h-8 md:h-12 md:w-36 w-24 text-lg md:text-2xl rounded-3xl">
                         Login
                     </button>
                 </Link>

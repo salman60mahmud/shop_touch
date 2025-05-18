@@ -19,7 +19,8 @@ const ProductDisplay = (props) => {
                     <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-48 hidden xl:block" src={products.image} alt="allProduct_image" />
                 </div>
                 <div className="order-1 md:order-2">
-                    <img className="h-[300px] sm:h-[400px] md:h-[445px] lg:h-[525px] xl:h-[700px] w-full md:w-[500px] lg:w-[836px]" src={products.image} alt="allProduct_image" />
+                    <img className="sm:h-[400px] md:h-[445px] lg:h-[525px] xl:h-[700px] md:w-[500px] lg:w-[836px]
+                    mx-auto w-full max-w-full h-auto object-contain" src={products.image} alt="allProduct_image" />
                 </div>
             </div>
 
