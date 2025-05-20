@@ -1,3 +1,6 @@
+.collections {
+    transition: 0.6s;
+}
 
 .collections p {
     margin: 6px 0px;
@@ -16,15 +19,16 @@
     text-decoration: line-through;
 }
 
-.collections:hover {
-    transform: scale(1.25);
-    transition: 0.6s;
-}
-
 .horizontal2 {
     width: 20%;
     height: 6px;
     margin-top: 8px;
     background: #252525;
     border-radius: 10px;
+}
+
+@media (min-width: 1024px) {
+    .collections:hover {
+        transform: scale(1.10);
+    }
 }

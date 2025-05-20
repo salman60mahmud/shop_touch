@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
       <footer className="footer bg-base-300 p-6 sm:p-10">
-        <div className="w-full max-w-[3000px] sm:mx-auto grid grid-cols-2  sm:flex sm:flex-row justify-center mx-10 sm:gap-4 md:gap-8 xl:-gap:256">
+        <div className="w-full max-w-[3000px] sm:mx-auto 2xl:w-4/5 grid grid-cols-2  sm:flex sm:flex-row justify-center mx-10 sm:gap-4 md:gap-8 xl:-gap:256">
           {/* Services */}
           <nav className="flex-1">
             <h6 className="footer-title text-[20px]">Services</h6>
@@ -84,7 +84,7 @@ const Footer = () => {
 
       {/* Copyright */}
       < footer className="bg-base-300" >
-        <aside className="w-full text-center p-4">
+        <aside className="w-full text-center p-4 -mt-4">
           <p className="text-sm sm:text-base md:text-lg">
             Copyright © {new Date().getFullYear()} - All right reserved by Shop Touch
           </p>
