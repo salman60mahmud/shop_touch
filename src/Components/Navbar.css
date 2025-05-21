@@ -1,4 +1,20 @@
-  .nav-menu hr {
+/* for overflow in right side fixing */
+html, body {
+    overflow-x: hidden; /* Prevent right-side overflow at all sizes */
+}
+
+.navbar {
+    max-width: 100%; /* Ensure navbar doesn’t exceed screen width */
+}
+
+@media (min-width: 541px) {
+    .navbar {
+        padding: 10px 20px; /* Maintain spacing without overflow */
+    }
+}
+
+
+ .nav-menu hr {
     border: none;
     width: 130%;
     height: 4px;
