@@ -10,21 +10,25 @@ const ProductDisplay = (props) => {
     if (loading) return <div>Loading products...</div>;
 
     return (
-        <div className="flex flex-col lg:flex-row mx-4 sm:mx-8 md:mx-16 lg:mx-30 my-6 sm:my-9 gap-6">
-            <div className="flex flex-col md:flex-row gap-4 md:mx-auto">
-                <div className="md:flex flex-row md:flex-col gap-3 order-2 md:order-1 hidden">
-                    <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-48" src={products.image} alt="allProduct_image" />
-                    <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-48" src={products.image} alt="allProduct_image" />
-                    <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-48" src={products.image} alt="allProduct_image" />
-                    <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-48 hidden xl:block" src={products.image} alt="allProduct_image" />
+        <div className="flex flex-col lg:flex-row mx-4 sm:mx-8 md:mx-12 lg:mx-18 my-6 sm:my-9 gap-6">
+
+            {/* image side */}
+            <div className="flex sm:flex-row lg:flex-col-reverse xl:flex-row gap-5 md:gap-0 lg:gap-5 xl:gap-0 md:mx-auto lg:w-1/2 xl:w-3/5  2xl:w-1/2 sm:mx-auto">
+
+                <div className="sm:flex sm:flex-col md:flex-col-3 lg:flex-row xl:flex-col gap-3 sm:gap-5 md:gap-3 lg:gap-4 order-2 sm:order-1 hidden md:ml-20 lg:mx-auto">
+                    <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] xl:h-[162px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-34 xl:w-auto" src={products.image} alt="allProduct_image" />
+                    <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] xl:h-[162px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-34 xl:w-auto" src={products.image} alt="allProduct_image" />
+                    <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] xl:h-[162px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-34 xl:w-auto" src={products.image} alt="allProduct_image" />
+                    <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] xl:h-[162px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-34 xl:w-auto hidden xl:block" src={products.image} alt="allProduct_image" />
                 </div>
-                <div className="order-1 md:order-2">
+                <div className="sm:order-1 md:order-2">
                     <img className="sm:h-[400px] md:h-[445px] lg:h-[525px] xl:h-[700px] md:w-[500px] lg:w-[836px]
                     mx-auto w-full max-w-full h-auto object-contain" src={products.image} alt="allProduct_image" />
                 </div>
             </div>
 
-            <div className="mx-0 sm:mx-4 lg:mx-10 flex flex-col">
+            {/* text side */}
+            <div className="mx-0 sm:mx-4 lg:mx-10 flex flex-col lg:w-1/2 xl:w-2/5 2xl:w-1/2">
                 <h1 className="text-xl sm:text-2xl lg:text-3xl font-medium mt-2 sm:mt-4 mb-2 sm:mb-3">{products.name}</h1>
                 <div>
                     <div className="flex gap-1 text-orange-600">
