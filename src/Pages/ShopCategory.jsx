@@ -26,7 +26,7 @@ const ShopCategory = ({ banner, category }) => {
           allProduct.map(allProduct => {
             if (category === allProduct.category) {
               return (
-                <div className="hover:scale-125 transition-transform duration-600" key={allProduct.name}>
+                <div className="hover:lg:scale-110 transition-transform duration-600" key={allProduct.name}>
                   <Link to={`/products/${allProduct.id}`}><img onClick={() => window.scrollTo(0, 0)} src={allProduct.image} alt="allProduct_image" /></Link>
                   <p>{allProduct.name}</p>
                   <div className="flex gap-20">
@@ -49,7 +49,7 @@ const ShopCategory = ({ banner, category }) => {
       </div>
 
       <div className="flex justify-center xl:my-30 sm:my-14 my-10">
-        <button className="btn rounded-3xl xl:text-[18px] sm:text-[16px] xl:font-semibold sm:font-medium px-8 py-6 hover:translate-1 hover:scale-100 cursor-pointer">Explore More</button>
+        <button className="btn rounded-3xl xl:text-[18px] sm:text-[16px] xl:font-semibold sm:font-medium font-normal px-8 py-6 cursor-pointer">Explore More</button>
       </div>
     </div>
   );

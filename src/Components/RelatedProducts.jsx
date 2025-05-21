@@ -22,7 +22,7 @@ const RelatedProducts = (props) => {
                                 <div className="lg:w-[390px] md:w-[240px]" key={newCollections.id}>
                                     <Link to={`/products/${newCollections.id}`}> <img onClick={() => window.scrollTo(0, 0)}
                                     src={newCollections.image} alt="newCollections.name"
-                                    className="mx-auto w-full max-w-full h-auto object-contain" /></Link>
+                                    className="mx-auto w-full max-w-full h-auto object-contain hover:lg:scale-110 transition-transform duration-600" /></Link>
                                     <p>{newCollections.name}</p>
                                     <div className="flex gap-20">
                                         <div className="collections-prices-new">

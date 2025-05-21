@@ -2,47 +2,48 @@
 @plugin "daisyui";
 
 body {
-    margin: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: poppins, sans-serif;
-    
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: poppins, sans-serif;
+
   /* Scrollbar custom properties */
   --sb-track-color: #dfe2d4;
   --sb-thumb-color: #3de4bc;
   --sb-size: 12px;
 }
 
-/* Force scrollbar to appear and compensate layout */
-html {
-  overflow-y: scroll;
-   /* Force scrollbar */
+@media (min-width: 768px) {
+
+  /* Apply scrollbar styles only for tablets and larger screens */
+  html {
+    overflow-y: scroll;
+    /* Force scrollbar */
     margin-left: calc(99vw - 100%);
     /* Compensate for scrollbar */
-  scrollbar-width: var(--sb-size); /* For Firefox */
-  scrollbar-color: var(--sb-thumb-color) var(--sb-track-color); /* For Firefox */
-}
+    scrollbar-width: var(--sb-size);
+    /* For Firefox */
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    /* For Firefox */
+  }
 
-/* Webkit scrollbar styling (Chrome, Safari, Edge) */
-::-webkit-scrollbar {
-  width: var(--sb-size);
-}
+  /* Webkit scrollbar styling (Chrome, Safari, Edge) */
+  ::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
 
-::-webkit-scrollbar-track {
-  background: var(--sb-track-color);
-  border-radius: 11px;
-}
+  ::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 11px;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: var(--sb-thumb-color);
-  border-radius: 11px;
-}
+  ::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 11px;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #2bc19c; /* Darker shade for hover effect */
-}
-
-/* Ensure body fills viewport height for scrollbars to appear when needed */
-body {
-  min-height: 101vh; /* Slightly over 100vh to ensure scrollbar appears */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2bc19c;
+    /* Darker shade for hover effect */
+  }
 }

@@ -11,7 +11,7 @@ const ProductDisplay = (props) => {
 
     return (
         <div className="flex flex-col lg:flex-row mx-4 sm:mx-8 md:mx-16 lg:mx-30 my-6 sm:my-9 gap-6">
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4 md:mx-auto">
                 <div className="md:flex flex-row md:flex-col gap-3 order-2 md:order-1 hidden">
                     <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-48" src={products.image} alt="allProduct_image" />
                     <img className="h-[100px] sm:h-[120px] md:h-[140px] lg:h-[166px] w-[80px] sm:w-[100px] md:w-[120px] lg:w-48" src={products.image} alt="allProduct_image" />
