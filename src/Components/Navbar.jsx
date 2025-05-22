@@ -40,7 +40,7 @@ const Navbar = () => {
             {/* Logo section - visible on all screens */}
             <div className="navbar-start lg:gap-10">
                 <Link to='/' end> <img className="hidden lg:flex" src="/src/media/logo.png" alt="logo" /></Link>
-                <p className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-medium ms:font-semibold"> <Link to='/' end>SHOP <br />Touch</Link></p>
+                <p className="text-2xl lg:text-3xl xl:text-4xl font-medium ms:font-semibold bubblegum-sans-font"> <Link to='/' end>SHOP <br />Touch</Link></p>
             </div>
 
             {/* Desktop menu - hidden on mobile */}

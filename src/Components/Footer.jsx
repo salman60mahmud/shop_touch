@@ -1,5 +1,6 @@
 
 import { FaWhatsapp, FaInstagram, FaFacebook, FaPinterest } from "react-icons/fa6";
+import "./Navbar.css"
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -49,26 +50,26 @@ const Footer = () => {
           </nav>
         </div>
 
-          {/* Social for mobile */}
-          <nav className="sm:hidden mx-auto">
-            <h6 className="footer-title text-xl sm:text-xl">Social</h6>
-            <div className="grid gap-4">
-              <div className="grid grid-flow-col gap-4 justify-start">
-                <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
-                  <FaWhatsapp />
-                </a>
-                <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
-                  <FaInstagram />
-                </a>
-                <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
-                  <FaFacebook />
-                </a>
-                <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
-                  <FaPinterest />
-                </a>
-              </div>
+        {/* Social for mobile */}
+        <nav className="sm:hidden mx-auto">
+          <h6 className="footer-title text-xl sm:text-xl">Social</h6>
+          <div className="grid gap-4">
+            <div className="grid grid-flow-col gap-4 justify-start">
+              <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+                <FaWhatsapp />
+              </a>
+              <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+                <FaInstagram />
+              </a>
+              <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+                <FaFacebook />
+              </a>
+              <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+                <FaPinterest />
+              </a>
             </div>
-          </nav>
+          </div>
+        </nav>
 
         {/* brand logo */}
         <div className='flex items-center gap-4 mx-auto'>
@@ -76,7 +77,7 @@ const Footer = () => {
             <img src="/src/media/logo_big.png" alt="logo_big" className="h-12 w-auto" />
           </Link>
           <Link to='/' end>
-            <p className='text-xl sm:text-2xl font-medium'>SHOP Touch</p>
+            <p className='text-xl sm:text-2xl font-medium bubblegum-sans-font'>SHOP Touch</p>
           </Link>
         </div>
 
