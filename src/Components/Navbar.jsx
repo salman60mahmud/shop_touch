@@ -11,7 +11,8 @@ const Navbar = () => {
 
     return (
         <div className="navbar bg-base-100 shadow-sm p-4 lg:p-16">
-            {/* Mobile navbar start */}
+
+            {/* Mobile Dropdown */}
             <div className="navbar-start lg:hidden">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost">
@@ -37,14 +38,14 @@ const Navbar = () => {
             </div>
 
             {/* Logo section - visible on all screens */}
-            <div className="navbar-start hidden lg:flex lg:gap-10">
-                <Link to='/' end> <img src="/src/media/logo.png" alt="logo" /></Link>
-                <p className="text-4xl font-bold"> <Link to='/' end>SHOP <br />Touch</Link></p>
+            <div className="navbar-start lg:gap-10">
+                <Link to='/' end> <img className="hidden lg:flex" src="/src/media/logo.png" alt="logo" /></Link>
+                <p className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-medium ms:font-semibold"> <Link to='/' end>SHOP <br />Touch</Link></p>
             </div>
 
             {/* Desktop menu - hidden on mobile */}
             <div className="navbar-center hidden lg:flex">
-                <ul className="flex items-center list-none gap-20 text-neutral-600 text-2xl font-semibold cursor-pointer nav-menu">
+                <ul className="flex items-center list-none gap-20 lg:gap-16 xl:gap-20 text-neutral-600 text-2xl font-semibold cursor-pointer nav-menu">
                     <li className="nav-item">
                         <Link to='/' end>Shop</Link>
                         {location.pathname === '/' && <hr />}
@@ -64,17 +65,18 @@ const Navbar = () => {
                 </ul>
             </div>
 
-            {/* Right side buttons - visible on all screens */}
+            {/* Login button - visible on all screens */}
             <div className="navbar-end gap-4 lg:gap-16">
-                <Link to='/login' className="hidden sm:inline-flex">
-                    <button className="btn btn-outline btn-secondary h-8 md:h-12 md:w-36 w-24 text-lg md:text-2xl rounded-3xl">
+                <Link to='/login' className="sm:inline-flex">
+                    <button className="btn btn-outline btn-secondary h-8 md:h-12 w-24 md:w-36 lg:w-28 xl:w-36 text-lg md:text-2xl rounded-3x md:mr-36 lg:mr-0">
                         Login
                     </button>
                 </Link>
-                <div className="flex items-center">
+                {/* Cart Button */}
+                <div className="flex items-center mt-4">
                     <Link to='/cart'>
-                        <img src="/src/media/cart_icon.png" alt="cart-icon" />
-                        <div className="badge badge-sm rounded-4xl bg-[#EA580C] text-white font-semibold border-0 -mt-24 ml-6">{getTotalCartItems()}</div>
+                        <img className="p-2 sm:p-0" src="/src/media/cart_icon.png" alt="cart-icon" />
+                        <div className="badge badge-sm rounded-2xl sm:rounded-4xl bg-[#EA580C] text-white font-semibold border-0 -mt-28 sm:-mt-24 ml-8 sm:ml-6">{getTotalCartItems()}</div>
                     </Link>
                 </div>
             </div>

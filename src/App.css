@@ -1,0 +1,4 @@
+.container {
+    max-width: 2000px; /* Sets the max width of container */
+    margin: 0 auto;    /* Center the container */
+}

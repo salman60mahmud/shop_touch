@@ -4,16 +4,16 @@ const LoginSignup = () => {
             {/* form part */}
             <div className="mt-10 lg:mb-20 mb-5">
                 <h4 className="text-[16px] mb-3">Start Your Journey</h4>
-                <h2 className="text-2xl font-semibold mb-10">Sign Up To SHOP Touch</h2>
+                <h2 className="text-xl sm:text-2xl font-medium sm:font-semibold mb-6 sm:mb-10">Sign Up To SHOP Touch</h2>
                 <fieldset className="fieldset w-full max-w-[350px] bg-base-200 border-base-300 rounded-box border p-4">
 
-                    <label className="text-xl">Name</label>
+                    <label className="text-[18px] sm:text-xl">Name</label>
                     <input type="text" className="input w-full" placeholder="Your Name" />
 
-                    <label className="text-xl">Email</label>
+                    <label className="text-[18px] sm:text-xl">Email</label>
                     <input type="email" className="input w-full" placeholder="Email Address" />
 
-                    <label className="text-xl">Password</label>
+                    <label className="text-[18px] sm:text-xl">Password</label>
                     <input type="password" className="input w-full" placeholder="Password" />
 
                     <button className="btn text-base-100 bg-blue-600 hover:bg-base-100 hover:text-blue-600 mt-5 tracking-wide hover:tracking-normal w-full">Continue</button>

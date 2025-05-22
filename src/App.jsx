@@ -7,10 +7,11 @@ import Products from './Pages/Products'
 import Cart from './Pages/Cart'
 import LoginSignup from './Pages/LoginSignup'
 import Footer from './Components/Footer'
+import NotFound from './Components/NotFound'
 
 function App() {
   return (
-    <>
+    <div className='container'>
       <Navbar />
       <Routes>
         <Route index element={<Shop />} />
@@ -23,9 +24,10 @@ function App() {
         </Route>
         <Route path='cart' element={<Cart />} />
         <Route path='login' element={<LoginSignup />} />
+        <Route path='*' element={<NotFound/>} />
       </Routes>
       <Footer />
-    </>
+    </div>
   )
 }
 
