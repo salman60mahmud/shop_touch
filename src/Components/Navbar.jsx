@@ -39,7 +39,7 @@ const Navbar = () => {
 
             {/* Logo section - visible on all screens */}
             <div className="navbar-start lg:gap-10">
-                <Link to='/' end> <img className="hidden lg:flex" src="/src/media/logo.png" alt="logo" /></Link>
+                <Link to='/' end> <img className="hidden lg:flex" src="/Images/logo.png" alt="logo" /></Link>
                 <p className="text-2xl lg:text-3xl xl:text-4xl font-medium ms:font-semibold bubblegum-sans-font"> <Link to='/' end>SHOP <br />Touch</Link></p>
             </div>
 
@@ -75,7 +75,7 @@ const Navbar = () => {
                 {/* Cart Button */}
                 <div className="flex items-center mt-4">
                     <Link to='/cart'>
-                        <img className="p-2 sm:p-0" src="/src/media/cart_icon.png" alt="cart-icon" />
+                        <img className="p-2 sm:p-0" src="/Images/cart_icon.png" alt="cart-icon" />
                         <div className="badge badge-sm rounded-2xl sm:rounded-4xl bg-[#EA580C] text-white font-semibold border-0 -mt-28 sm:-mt-24 ml-8 sm:ml-6">{getTotalCartItems()}</div>
                     </Link>
                 </div>

@@ -6,13 +6,13 @@ const Hero = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const slides = [
         {
-            image: '/src/media/hero-1.png',
+            image: '/Images/hero-1.png',
         },
         {
-            image: '/src/media/hero-2.png',
+            image: '/Images/hero-2.png',
         },
         {
-            image: '/src/media/hero-3.png',
+            image: '/Images/hero-3.png',
         },
     ];
 
@@ -55,7 +55,7 @@ const Hero = () => {
                                 <div className='delius-font'>
                                     <div className="flex items-center justify-center md:justify-start gap-2 sm:gap-4">
                                         <p className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white">New</p>
-                                        <img className="h-12 sm:h-20 md:h-24 w-auto" src="/src/media/hand_icon.png" alt="hand-icon" />
+                                        <img className="h-12 sm:h-20 md:h-24 w-auto" src="/Images/hand_icon.png" alt="hand-icon" />
                                     </div>
                                     <p className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold mt-2 sm:mt-4 text-white">Collections</p>
                                     <p className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold mt-2 sm:mt-4 md:mt-6 text-white">For Everyone</p>

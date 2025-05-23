@@ -3,7 +3,7 @@
     "id": 12,
     "name": "Buttoned Shirt Dress with Side Slits and Belt",
     "category": "women",
-    "image": "../src/media/product_12.png",
+    "image": "/Images/product_12.png",
     "new_price": 50.0,
     "old_price": 80.5
   },
@@ -11,7 +11,7 @@
     "id": 35,
     "name": "Boys Brown Solid Knit Full-Sleeve Cardigan",
     "category": "kids",
-    "image": "../src/media/product_35.png",
+    "image": "/Images/product_35.png",
     "new_price": 85.0,
     "old_price": 120.5
   },
@@ -19,7 +19,7 @@
     "id": 14,
     "name": "Men Navy Blue Distressed Mid-Rise Slim Fit Jeans",
     "category": "men",
-    "image": "../src/media/product_14.png",
+    "image": "/Images/product_14.png",
     "new_price": 60.0,
     "old_price": 100.5
   },
@@ -27,7 +27,7 @@
     "id": 8,
     "name": "High Neck Satin Blouse with Keyhole Back",
     "category": "women",
-    "image": "../src/media/product_8.png",
+    "image": "/Images/product_8.png",
     "new_price": 100.0,
     "old_price": 150.0
   },
@@ -35,7 +35,7 @@
     "id": 15,
     "name": "Men Olive Green Solid Hooded Lightweight Windcheater",
     "category": "men",
-    "image": "../src/media/product_15.png",
+    "image": "/Images/product_15.png",
     "new_price": 50.0,
     "old_price": 80.5
   },
@@ -43,7 +43,7 @@
     "id": 2,
     "name": "Ruffled V-Neck Wrap Waist Chiffon Midi Dress",
     "category": "women",
-    "image": "../src/media/product_2.png",
+    "image": "/Images/product_2.png",
     "new_price": 85.0,
     "old_price": 120.5
   },
@@ -51,7 +51,7 @@
     "id": 17,
     "name": "Men Grey Solid Ribbed Collar Zip-Front Sweatshirt",
     "category": "men",
-    "image": "../src/media/product_17.png",
+    "image": "/Images/product_17.png",
     "new_price": 60.0,
     "old_price": 100.5
   },
@@ -59,7 +59,7 @@
     "id": 28,
     "name": "Boys Red and Navy Striped Polo Collar T-Shirt",
     "category": "kids",
-    "image": "../src/media/product_28.png",
+    "image": "/Images/product_28.png",
     "new_price": 100.0,
     "old_price": 150.0
   }

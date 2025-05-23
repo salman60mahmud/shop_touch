@@ -28,7 +28,7 @@ const LoginSignup = () => {
 
             {/* image part */}
             <div className="hidden md:block">
-                <img className="max-w-full h-auto" src="/src/media/signup-cover.png" alt="signup-cover" />
+                <img className="max-w-full h-auto" src="/Images/signup-cover.png" alt="signup-cover" />
             </div>
         </div>
     );

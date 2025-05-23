@@ -74,7 +74,7 @@ const Footer = () => {
         {/* brand logo */}
         <div className='flex items-center gap-4 mx-auto'>
           <Link to='/' end>
-            <img src="/src/media/logo_big.png" alt="logo_big" className="h-12 w-auto" />
+            <img src="/Images/logo_big.png" alt="logo_big" className="h-12 w-auto" />
           </Link>
           <Link to='/' end>
             <p className='text-xl sm:text-2xl font-medium bubblegum-sans-font'>SHOP Touch</p>

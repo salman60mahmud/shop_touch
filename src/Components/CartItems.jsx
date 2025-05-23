@@ -22,7 +22,7 @@ const CartItems = () => {
     }
 
     return (
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-16 2xl:px-24 py-8">
             {/* Cart Header - Desktop */}
             <div className="hidden md:grid grid-cols-12 gap-4 items-center py-4 border-b border-gray-200">
                 <div className="col-span-5 font-medium text-gray-600 sm:text-xl">Product</div>
@@ -48,7 +48,6 @@ const CartItems = () => {
                                 
                                 <div className="mt-4 space-y-3">
                                     <h3 className="font-medium text-lg">{product.name}</h3>
-                                    
                                     <div className="flex justify-between items-center">
                                         <span className="text-gray-900">Price:</span>
                                         <span className="font-medium">${product.new_price}</span>
@@ -89,7 +88,7 @@ const CartItems = () => {
                                         alt={product.name} 
                                     />
                                     <div>
-                                        <h3 className="font-medium">{product.name}</h3>
+                                        <h3 className="md:text-xl">{product.name}</h3>
                                     </div>
                                 </div>
                                 

@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
     "category": "women",
-    "image": "../src/media/product_1.png",
+    "image": "/Images/product_1.png",
     "description": "Elegant striped blouse featuring delicate flutter sleeves and feminine peplum hem. The overlap collar adds sophistication, perfect for both office wear and casual outings.",
     "new_price": 50.0,
     "old_price": 80.5
@@ -14,7 +14,7 @@
     "id": 2,
     "name": "Ruffled V-Neck Wrap Waist Chiffon Midi Dress",
     "category": "women",
-    "image": "../src/media/product_2.png",
+    "image": "/Images/product_2.png",
     "description": "Flowing chiffon midi dress with flattering wrap waist and romantic ruffled v-neck. Ethereal and graceful, ideal for garden parties or summer evening events.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -23,7 +23,7 @@
     "id": 3,
     "name": "Pleated Puff Sleeve Belted A-Line Maxi Dress",
     "category": "women",
-    "image": "../src/media/product_3.png",
+    "image": "/Images/product_3.png",
     "description": "Statement maxi dress with dramatic pleated puff sleeves and cinching belt detail. The sweeping A-line silhouette creates an elegant, timeless look for special occasions.",
     "new_price": 60.0,
     "old_price": 100.5
@@ -32,7 +32,7 @@
     "id": 4,
     "name": "Floral Print Tiered Skirt Off-Shoulder Sundress",
     "category": "women",
-    "image": "../src/media/product_4.png",
+    "image": "/Images/product_4.png",
     "description": "Breezy off-shoulder sundress adorned with vibrant floral prints and playful tiered skirt. Perfect for warm weather and vacation getaways with its carefree bohemian vibe.",
     "new_price": 100.0,
     "old_price": 150.0
@@ -41,7 +41,7 @@
     "id": 5,
     "name": "Lace Panel Button-Front Empire Waist Tunic",
     "category": "women",
-    "image": "../src/media/product_5.png",
+    "image": "/Images/product_5.png",
     "description": "Sophisticated tunic featuring delicate lace panels and flattering empire waist. The button-front design offers versatility, easily transitioning from day to evening wear.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -50,7 +50,7 @@
     "id": 6,
     "name": "Balloon Sleeve Square Neck Smocked Blouse",
     "category": "women",
-    "image": "../src/media/product_6.png",
+    "image": "/Images/product_6.png",
     "description": "Trend-forward blouse with voluminous balloon sleeves and figure-flattering smocked bodice. The square neckline adds a contemporary touch to this versatile wardrobe essential.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -59,7 +59,7 @@
     "id": 7,
     "name": "Polka Dot Ruched Front Frill Hem Mini Dress",
     "category": "women",
-    "image": "../src/media/product_7.png",
+    "image": "/Images/product_7.png",
     "description": "Playful mini dress featuring classic polka dots, feminine ruched front, and flirty frill hem. The retro-inspired silhouette creates a fun, youthful look for day or night.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -68,7 +68,7 @@
     "id": 8,
     "name": "High Neck Satin Blouse with Keyhole Back",
     "category": "women",
-    "image": "../src/media/product_8.png",
+    "image": "/Images/product_8.png",
     "description": "Luxurious satin blouse with elegant high neckline and unexpected keyhole back detail. The lustrous fabric and refined silhouette elevate any professional or evening ensemble.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -77,7 +77,7 @@
     "id": 9,
     "name": "Boho Embroidered Bell Sleeve Swing Dress",
     "category": "women",
-    "image": "../src/media/product_9.png",
+    "image": "/Images/product_9.png",
     "description": "Free-spirited swing dress adorned with intricate embroidery and dramatic bell sleeves. The bohemian-inspired design captures effortless style for festivals or summer gatherings.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -86,7 +86,7 @@
     "id": 10,
     "name": "Asymmetrical Hem Halter Neck Bodycon Dress",
     "category": "women",
-    "image": "../src/media/product_10.png",
+    "image": "/Images/product_10.png",
     "description": "Striking bodycon dress featuring a flattering halter neckline and modern asymmetrical hem. The sleek silhouette creates a bold, confident look perfect for evening occasions.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -95,7 +95,7 @@
     "id": 11,
     "name": "Cropped Ruffle Sleeve Peplum Tie-Back Top",
     "category": "women",
-    "image": "../src/media/product_11.png",
+    "image": "/Images/product_11.png",
     "description": "Flirty cropped top with playful ruffle sleeves and feminine peplum detail. The charming tie-back adds adjustable fit and visual interest to this summer-ready piece.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -104,7 +104,7 @@
     "id": 12,
     "name": "Buttoned Shirt Dress with Side Slits and Belt",
     "category": "women",
-    "image": "../src/media/product_12.png",
+    "image": "/Images/product_12.png",
     "description": "Versatile shirt dress elevated with practical side slits and waist-defining belt. The classic button-front design offers effortless style for work, weekend, or travel.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -113,7 +113,7 @@
     "id": 13,
     "name": "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
     "category": "men",
-    "image": "../src/media/product_13.png",
+    "image": "/Images/product_13.png",
     "description": "Contemporary green bomber jacket with sleek full-zip closure and tailored slim fit. The versatile solid design offers urban style with practical functionality for everyday wear.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -122,7 +122,7 @@
     "id": 14,
     "name": "Men Navy Blue Distressed Mid-Rise Slim Fit Jeans",
     "category": "men",
-    "image": "../src/media/product_14.png",
+    "image": "/Images/product_14.png",
     "description": "Modern navy jeans featuring on-trend distressed details and comfortable mid-rise waist. The versatile slim fit balances style and comfort for everyday casual looks.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -131,7 +131,7 @@
     "id": 15,
     "name": "Men Olive Green Solid Hooded Lightweight Windcheater",
     "category": "men",
-    "image": "../src/media/product_15.png",
+    "image": "/Images/product_15.png",
     "description": "Practical olive windcheater combining weather protection with lightweight comfort. The clean solid design and functional hood create a versatile outdoor essential for changing seasons.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -140,7 +140,7 @@
     "id": 16,
     "name": "Men Maroon Textured Mandarin Collar Slim Fit Shirt",
     "category": "men",
-    "image": "../src/media/product_16.png",
+    "image": "/Images/product_16.png",
     "description": "Sophisticated maroon shirt with distinctive mandarin collar and subtle texture. The contemporary slim fit silhouette offers refined style for both formal occasions and smart-casual events.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -149,7 +149,7 @@
     "id": 17,
     "name": "Men Grey Solid Ribbed Collar Zip-Front Sweatshirt",
     "category": "men",
-    "image": "../src/media/product_17.png",
+    "image": "/Images/product_17.png",
     "description": "Classic grey sweatshirt enhanced with distinctive ribbed collar and convenient zip-front closure. The versatile solid design offers everyday warmth with clean, minimalist style.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -158,7 +158,7 @@
     "id": 18,
     "name": "Men Beige Printed Crew Neck Regular Fit T-Shirt",
     "category": "men",
-    "image": "../src/media/product_18.png",
+    "image": "/Images/product_18.png",
     "description": "Casual beige t-shirt featuring stylish printed design and comfortable regular fit. The timeless crew neck creates an effortless everyday essential with subtle visual interest.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -167,7 +167,7 @@
     "id": 19,
     "name": "Men Brown Faux Leather Stand Collar Biker Jacket",
     "category": "men",
-    "image": "../src/media/product_19.png",
+    "image": "/Images/product_19.png",
     "description": "Rugged brown biker jacket crafted from premium faux leather with distinctive stand collar. The classic silhouette adds instant edge and timeless appeal to casual outfits.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -176,7 +176,7 @@
     "id": 20,
     "name": "Men Navy Blue Checked Spread Collar Slim Fit Casual Shirt",
     "category": "men",
-    "image": "../src/media/product_20.png",
+    "image": "/Images/product_20.png",
     "description": "Refined navy casual shirt featuring classic check pattern and crisp spread collar. The modern slim fit creates a polished appearance perfect for smart-casual office days or weekend outings.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -185,7 +185,7 @@
     "id": 21,
     "name": "Men White Solid Slim Fit Cotton Formal Shirt",
     "category": "men",
-    "image": "../src/media/product_21.png",
+    "image": "/Images/product_21.png",
     "description": "Essential white formal shirt crafted from crisp cotton with tailored slim fit. The versatile solid design offers timeless elegance for professional settings and special occasions.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -194,7 +194,7 @@
     "id": 22,
     "name": "Men Blue Faded Skinny Fit Stretchable Denim Jeans",
     "category": "men",
-    "image": "../src/media/product_22.png",
+    "image": "/Images/product_22.png",
     "description": "Contemporary blue jeans featuring trendy faded wash and modern skinny fit. The comfortable stretch denim ensures all-day comfort while maintaining a sleek silhouette.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -203,7 +203,7 @@
     "id": 23,
     "name": "Men Charcoal Solid Pullover Hoodie with Kangaroo Pocket",
     "category": "men",
-    "image": "../src/media/product_23.png",
+    "image": "/Images/product_23.png",
     "description": "Versatile charcoal hoodie combining comfort and practical style with convenient kangaroo pocket. The classic pullover design creates an essential layering piece for casual everyday wear.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -212,7 +212,7 @@
     "id": 24,
     "name": "Men Rust Orange Quilted Sleeveless Puffer Jacket",
     "category": "men",
-    "image": "../src/media/product_24.png",
+    "image": "/Images/product_24.png",
     "description": "Statement rust orange puffer vest featuring insulating quilted design and sleeveless functionality. The bold color and practical warmth create a standout layering piece for cold seasons.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -221,7 +221,7 @@
     "id": 25,
     "name": "Boys Orange Color Blocked Hooded Sweatshirt",
     "category": "kids",
-    "image": "../src/media/product_25.png",
+    "image": "/Images/product_25.png",
     "description": "Vibrant orange sweatshirt featuring playful color blocking and practical hood. The energetic design offers cozy comfort with youthful style for active kids on cool days.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -230,7 +230,7 @@
     "id": 26,
     "name": "Boys Blue Printed Round Neck Cotton T-Shirt",
     "category": "kids",
-    "image": "../src/media/product_26.png",
+    "image": "/Images/product_26.png",
     "description": "Comfortable blue t-shirt made from soft cotton with fun printed design. The classic round neck and breathable fabric create an essential everyday piece for active children.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -239,7 +239,7 @@
     "id": 27,
     "name": "Boys Green Camo Patterned Full-Sleeve Jacket",
     "category": "kids",
-    "image":"../src/media/product_27.png",
+    "image":"/Images/product_27.png",
     "description": "Adventure-ready jacket featuring trendy green camouflage pattern and practical full sleeves. The durable construction offers protection and style for outdoor activities and casual wear.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -248,7 +248,7 @@
     "id": 28,
     "name": "Boys Red and Navy Striped Polo Collar T-Shirt",
     "category": "kids",
-    "image": "../src/media/product_28.png",
+    "image": "/Images/product_28.png",
     "description": "Classic polo t-shirt with playful red and navy stripes for a preppy look. The comfortable design combines style and durability, perfect for school days or casual outings.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -257,7 +257,7 @@
     "id": 29,
     "name": "Boys Grey Melange Graphic Print Pullover Hoodie",
     "category": "kids",
-    "image": "../src/media/product_29.png",
+    "image": "/Images/product_29.png",
     "description": "Cozy grey melange hoodie featuring eye-catching graphic print and easy pullover design. The soft fabric and practical hood offer warmth and style for active boys.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -266,7 +266,7 @@
     "id": 30,
     "name": "Boys Black Solid Elastic Waist Cargo Joggers",
     "category": "kids",
-    "image": "../src/media/product_30.png",
+    "image": "/Images/product_30.png",
     "description": "Versatile black joggers combining cargo functionality with comfortable elastic waist. The practical pockets and durable design create an ideal bottom for active play and casual wear.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -275,7 +275,7 @@
     "id": 31,
     "name": "Boys Yellow and White Checked Button-Down Shirt",
     "category": "kids",
-    "image": "../src/media/product_31.png",
+    "image": "/Images/product_31.png",
     "description": "Cheerful yellow and white checked shirt with classic button-down design. The bright pattern and practical style create a versatile piece for both special occasions and school days.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -284,7 +284,7 @@
     "id": 32,
     "name": "Boys Denim Blue Washed Slim Fit Jeans",
     "category": "kids",
-    "image": "../src/media/product_32.png",
+    "image": "/Images/product_32.png",
     "description": "Classic blue jeans featuring comfortable washed denim and modern slim fit. The durable construction and timeless style create a versatile essential for everyday wear.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -293,7 +293,7 @@
     "id": 33,
     "name": "Boys Olive Green Quilted Zip-Front Puffer Jacket",
     "category": "kids",
-    "image": "../src/media/product_33.png",
+    "image": "/Images/product_33.png",
     "description": "Warm olive green puffer jacket with insulating quilted design and convenient zip-front closure. The practical style offers reliable protection for colder weather adventures.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -302,7 +302,7 @@
     "id": 34,
     "name": "Boys Sky Blue Cartoon Print Crew Neck Sweatshirt",
     "category": "kids",
-    "image": "../src/media/product_34.png",
+    "image": "/Images/product_34.png",
     "description": "Playful sky blue sweatshirt featuring fun cartoon prints and comfortable crew neck. The soft fabric and cheerful design make it a favorite for everyday comfort and casual style.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -311,7 +311,7 @@
     "id": 35,
     "name": "Boys Brown Solid Knit Full-Sleeve Cardigan",
     "category": "kids",
-    "image": "../src/media/product_35.png",
+    "image": "/Images/product_35.png",
     "description": "Cozy brown cardigan crafted from quality knit with practical full sleeves. The classic button-front design offers versatile layering options for cooler days and dressed-up occasions.",
     "new_price": 85.0,
     "old_price": 120.5
@@ -320,7 +320,7 @@
     "id": 36,
     "name": "Boys Navy Blue Color Block Zip-Up Track Jacket",
     "category": "kids",
-    "image": "../src/media/product_36.png",
+    "image": "/Images/product_36.png",
     "description": "Sporty navy track jacket featuring trendy color blocking and functional full zip closure. The athletic design offers comfort and style for active kids and casual everyday wear.",
     "new_price": 85.0,
     "old_price": 120.5
