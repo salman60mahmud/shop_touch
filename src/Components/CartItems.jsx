@@ -1,112 +1,178 @@
 import { useContext } from "react";
 import { OurContext } from "../Context/ContextProvider";
-import { CiSquareRemove } from "react-icons/ci";
+import { FiMinus } from "react-icons/fi";
+import { FaPlus } from "react-icons/fa6";
 
 const CartItems = () => {
-    const { allProduct, cartItems, removeFromCart, getTotalCartAmount, loading } = useContext(OurContext);
+    const { 
+        allProduct, 
+        cartItems, 
+        removeFromCart, 
+        addToCart, 
+        getTotalCartAmount, 
+        loading 
+    } = useContext(OurContext);
 
-    if (loading) return <div className="text-center py-10">Loading products...</div>;
+    if (loading) {
+        return (
+            <div className="flex justify-center items-center py-20">
+                <span className="text-lg">Loading products...</span>
+            </div>
+        );
+    }
 
     return (
-        <div className="my-4 mx-4 md:my-8 md:mx-8 lg:my-12 lg:mx-12 xl:my-16 xl:mx-16">
-
-            {/* cart header - hidden on mobile */}
-            <div className="hidden md:grid grid-cols-[2fr_3fr_1fr_1fr_1fr_1fr] items-center gap-4 lg:gap-8 text-sm lg:text-base xl:text-lg font-medium px-2 py-2">
-                <p>Products</p>
-                <p>Title</p>
-                <p>Price</p>
-                <p>Quantity</p>
-                <p>Total</p>
-                <p>Remove</p>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            {/* Cart Header - Desktop */}
+            <div className="hidden md:grid grid-cols-12 gap-4 items-center py-4 border-b border-gray-200">
+                <div className="col-span-5 font-medium text-gray-600 sm:text-xl">Product</div>
+                <div className="col-span-2 font-medium text-gray-600 text-center sm:text-xl">Price</div>
+                <div className="col-span-3 font-medium text-gray-600 text-center sm:text-xl">Quantity</div>
+                <div className="col-span-2 font-medium text-gray-600 text-right sm:text-xl">Total</div>
             </div>
-            <hr className="h-1 bg-[#e2e2e2] border-0 hidden md:block" />
 
+            {/* Cart Items */}
             {allProduct?.length > 0 ? (
-                allProduct.map(product => (
-                    cartItems[product.id] > 0 ? (
-                        <div key={product.id}>
-                            {/* Mobile view */}
-                            <div className="md:hidden border rounded-lg p-4 mb-4">
-                                <div className="flex justify-between items-start mb-3">
-                                    <img className="h-20 w-20 object-contain" src={product.image} alt={product.name} />
-                                    <CiSquareRemove className="text-3xl cursor-pointer text-red-500" onClick={() => removeFromCart(product.id)} />
+                allProduct.map((product) => 
+                    cartItems[product.id] > 0 && (
+                        <div key={product.id} className="mb-6">
+                            {/* Mobile View */}
+                            <div className="md:hidden bg-white rounded-lg shadow-sm p-4 mb-4">
+                                <div className="flex justify-between items-start">
+                                    <img 
+                                        className="h-24 w-24 object-contain" 
+                                        src={product.image} 
+                                        alt={product.name} 
+                                    />
                                 </div>
-                                <div className="space-y-2">
-                                    <p className="font-medium">{product.name}</p>
-                                    <div className="flex justify-between">
-                                        <span className="text-gray-600">Price:</span>
-                                        <span>${product.new_price}</span>
+                                
+                                <div className="mt-4 space-y-3">
+                                    <h3 className="font-medium text-lg">{product.name}</h3>
+                                    
+                                    <div className="flex justify-between items-center">
+                                        <span className="text-gray-900">Price:</span>
+                                        <span className="font-medium">${product.new_price}</span>
                                     </div>
-                                    <div className="flex justify-between">
-                                        <span className="text-gray-600">Qty:</span>
-                                        <span className="px-3 py-1 bg-gray-100 rounded">{cartItems[product.id]}</span>
+                                    
+                                    <div className="flex justify-between items-center">
+                                        <span className="text-gray-900">Quantity:</span>
+                                        <div className="flex items-center space-x-3">
+                                            <FiMinus 
+                                                className="text-xl cursor-pointer text-red-600 hover:text-red-800"
+                                                onClick={() => removeFromCart(product.id)}
+                                            />
+                                            <span className="px-3 py-1 bg-gray-100 rounded">
+                                                {cartItems[product.id]}
+                                            </span>
+                                            <FaPlus 
+                                                className="text-xl cursor-pointer text-green-700 hover:text-green-900"
+                                                onClick={() => addToCart(product.id)}
+                                            />
+                                        </div>
                                     </div>
-                                    <div className="flex justify-between font-bold">
-                                        <span>Total:</span>
-                                        <span>${product.new_price * cartItems[product.id]}</span>
+                                    
+                                    <div className="flex justify-between items-center pt-2 border-t border-gray-100">
+                                        <span className="font-semibold">Subtotal:</span>
+                                        <span className="font-bold">
+                                            ${product.new_price * cartItems[product.id]}
+                                        </span>
                                     </div>
                                 </div>
                             </div>
 
-                            {/* Desktop view */}
-                            <div className="hidden md:grid grid-cols-[2fr_3fr_1fr_1fr_1fr_1fr] items-center gap-4 lg:gap-8 text-sm lg:text-base px-2 py-3">
-                                <img className="h-16 lg:h-20 w-auto object-contain" src={product.image} alt={product.name} />
-                                <p>{product.name}</p>
-                                <p>${product.new_price}</p>
-                                <button className="btn rounded-lg w-12 lg:w-16 mx-auto">{cartItems[product.id]}</button>
-                                <p>${product.new_price * cartItems[product.id]}</p>
-                                <CiSquareRemove className="text-3xl lg:text-4xl cursor-pointer text-red-500 mx-auto" onClick={() => removeFromCart(product.id)} />
+                            {/* Desktop View */}
+                            <div className="hidden md:grid grid-cols-12 gap-4 items-center py-4 border-b border-gray-200">
+                                <div className="col-span-5 flex items-center space-x-4">
+                                    <img 
+                                        className="h-20 w-20 object-contain" 
+                                        src={product.image} 
+                                        alt={product.name} 
+                                    />
+                                    <div>
+                                        <h3 className="font-medium">{product.name}</h3>
+                                    </div>
+                                </div>
+                                
+                                <div className="col-span-2 text-center font-medium">
+                                    ${product.new_price}
+                                </div>
+                                
+                                <div className="col-span-3 flex items-center justify-center space-x-3">
+                                    <FiMinus 
+                                        className="text-xl cursor-pointer text-red-600 hover:text-red-800"
+                                        onClick={() => removeFromCart(product.id)}
+                                    />
+                                    <span className="px-4 py-1 bg-gray-100 rounded-md">
+                                        {cartItems[product.id]}
+                                    </span>
+                                    <FaPlus 
+                                        className="text-xl cursor-pointer text-green-700 hover:text-green-900"
+                                        onClick={() => addToCart(product.id)}
+                                    />
+                                </div>
+                                
+                                <div className="col-span-2 text-right font-bold">
+                                    ${product.new_price * cartItems[product.id]}
+                                </div>
                             </div>
-                            <hr className="hidden md:block h-px bg-gray-200 border-0 my-2" />
                         </div>
-                    ) : null
-                ))
+                    )
+                )
             ) : (
-                <p className="text-center py-10">No products found in your cart</p>
+                <div className="text-center py-16">
+                    <h3 className="text-xl font-medium text-gray-600">Your cart is empty</h3>
+                    <p className="mt-2 text-gray-500">Start shopping to add items to your cart</p>
+                </div>
             )}
 
-            {/* Cart Totals & promo */}
-            <section className="flex flex-col lg:flex-row gap-8 my-8 lg:my-12">
-                <div className="flex-1">
-                    <h1 className="text-xl mx-36 md:mx-0 lg:text-2xl font-semibold my-4">Cart Totals</h1>
-                    <div className="space-y-4 border rounded-lg p-4">
-                        <div className="flex justify-between">
-                            <p>Subtotal</p>
-                            <p>${getTotalCartAmount()}</p>
-                        </div>
-                        <hr />
-                        <div className="flex justify-between">
-                            <p>Shipping Fee</p>
-                            <p>Free</p>
-                        </div>
-                        <hr />
-                        <div className="flex justify-between font-bold">
-                            <h3>Total</h3>
-                            <h3>${getTotalCartAmount()}</h3>
+            {/* Cart Summary */}
+            {allProduct?.length > 0 && (
+                <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    {/* Promo Code */}
+                    <div className="order-2 lg:order-1 xl:mx-auto lg:my-auto">
+                        <h3 className="text-lg font-medium mb-4">Promo Code</h3>
+                        <div className="flex">
+                            <input
+                                type="text"
+                                placeholder="Enter promo code"
+                                className="md:w-96 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                            />
+                            <button
+                                className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-r-lg transition-colors duration-200"
+                            >
+                                Apply
+                            </button>
                         </div>
                     </div>
-                    <button className="btn btn-secondary w-full mt-4 py-3 rounded-lg">
-                        PROCEED TO CHECKOUT
-                    </button>
-                </div>
 
-                {/* promo code part */}
-                <div className="flex-1 md:mt-4">
-                    <p className="text-lg lg:text-xl mb-4">If you have a promo code, enter it here</p>
-                    <div className="flex">
-                        <input
-                            type="text"
-                            placeholder="Your promo code"
-                            className="flex-grow px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        />
-                        <button
-                            className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 sm:px-6 py-3 rounded-r-lg transition duration-200 cursor-pointer"
-                        >
-                            Submit
-                        </button>
+                    {/* Cart Totals */}
+                    <div className="order-1 lg:order-2">
+                        <h3 className="text-lg font-medium mb-4">Cart Totals</h3>
+                        <div className="bg-white rounded-lg shadow-sm p-6">
+                            <div className="space-y-4">
+                                <div className="flex justify-between">
+                                    <span className="text-gray-600">Subtotal</span>
+                                    <span className="font-medium">${getTotalCartAmount()}</span>
+                                </div>
+                                
+                                <div className="flex justify-between pt-4 border-t border-gray-100">
+                                    <span className="text-gray-600">Shipping</span>
+                                    <span className="font-medium text-green-600">Free</span>
+                                </div>
+                                
+                                <div className="flex justify-between pt-4 border-t border-gray-100 font-bold text-lg">
+                                    <span>Total</span>
+                                    <span>${getTotalCartAmount()}</span>
+                                </div>
+                            </div>
+                            
+                            <button className="w-full mt-6 bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition-colors duration-200">
+                                Proceed to Checkout
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </section>
+            )}
         </div>
     );
 };
