@@ -1,6 +1,6 @@
-
 import { FaWhatsapp, FaInstagram, FaFacebook, FaPinterest } from "react-icons/fa6";
 import "./Navbar.css"
+import "./Footer.css"
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -12,10 +12,10 @@ const Footer = () => {
           <nav className="flex-1">
             <h6 className="footer-title text-[20px]">Services</h6>
             <div className="grid gap-2 text-[16px] sm:text-[18px] font-medium">
-              <a className="transition duration-300 hover:-translate-y-1 hover:scale-105 cursor-pointer">Branding</a>
-              <a className="transition duration-300 hover:-translate-y-1 hover:scale-105 cursor-pointer">Design</a>
-              <a className="transition duration-300 hover:-translate-y-1 hover:scale-105 cursor-pointer">Products</a>
-              <a className="transition duration-300 hover:-translate-y-1 hover:scale-105 cursor-pointer">Marketing</a>
+              <a className="footer-text">Branding</a>
+              <a className="footer-text">Design</a>
+              <a className="footer-text">Products</a>
+              <a className="footer-text">Marketing</a>
             </div>
           </nav>
 
@@ -23,8 +23,8 @@ const Footer = () => {
           <nav className="flex-1">
             <h6 className="footer-title text-[20px] sm:text-xl">Company</h6>
             <div className="grid gap-2 text-[16px] sm:text-[18px] font-medium">
-              <a className="transition duration-300 hover:-translate-y-1 hover:scale-105 cursor-pointer">About us</a>
-              <a className="transition duration-300 hover:-translate-y-1 hover:scale-105 cursor-pointer">Contact</a>
+              <a className="footer-text">About us</a>
+              <a className="footer-text">Contact</a>
             </div>
           </nav>
 
@@ -33,16 +33,16 @@ const Footer = () => {
             <h6 className="footer-title text-xl sm:text-xl">Social</h6>
             <div className="grid gap-4">
               <div className="grid grid-flow-col gap-4 justify-start">
-                <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+                <a className='social-logo'>
                   <FaWhatsapp />
                 </a>
-                <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+                <a className='social-logo'>
                   <FaInstagram />
                 </a>
-                <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+                <a className='social-logo'>
                   <FaFacebook />
                 </a>
-                <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+                <a className='social-logo'>
                   <FaPinterest />
                 </a>
               </div>
@@ -55,16 +55,16 @@ const Footer = () => {
           <h6 className="footer-title text-xl sm:text-xl">Social</h6>
           <div className="grid gap-4">
             <div className="grid grid-flow-col gap-4 justify-start">
-              <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+              <a className='social-logo'>
                 <FaWhatsapp />
               </a>
-              <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+              <a className='social-logo'>
                 <FaInstagram />
               </a>
-              <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+              <a className='social-logo'>
                 <FaFacebook />
               </a>
-              <a className='text-2xl transition duration-300 hover:-translate-y-1 hover:scale-110 cursor-pointer'>
+              <a className='social-logo'>
                 <FaPinterest />
               </a>
             </div>

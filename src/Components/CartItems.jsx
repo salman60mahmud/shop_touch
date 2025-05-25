@@ -128,13 +128,13 @@ const CartItems = () => {
             {allProduct?.length > 0 && (
                 <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Promo Code */}
-                    <div className="order-2 lg:order-1 xl:mx-auto lg:my-auto">
+                    <div className="order-2 lg:order-1 mx-auto xl:mx-auto lg:my-auto">
                         <h3 className="text-lg font-medium mb-4">Promo Code</h3>
                         <div className="flex">
                             <input
                                 type="text"
                                 placeholder="Enter promo code"
-                                className="md:w-96 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-60 sm:w-72 md:w-96 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                             <button
                                 className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-r-lg transition-colors duration-200"

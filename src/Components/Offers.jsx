@@ -4,7 +4,7 @@ import './Offers.css';
 const Offers = () => {
     return (
         <div className="relative my-18">
-            {/* Video Background */}
+            {/* Video Background */} 
             <div className="relative h-screen w-full overflow-hidden">
                 <video
                     autoPlay
