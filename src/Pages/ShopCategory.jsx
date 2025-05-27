@@ -12,15 +12,15 @@ const ShopCategory = ({ banner, category }) => {
   return (
     <div>
       <img className="block xl:w-3/4 w-4/5 mx-auto xl:my-10 my-5" src={banner} alt={`${category} banner`} />
-      <div className="flex xl:justify-between sm:justify-around gap-24 xl:mx-60 sm:mx-4 mx-10">
-        <p className="md:text-xl">
+      <div className="flex xl:justify-between md:justify-between justify-between gap-5 md:gap-48 xl:mx-60 sm:mx-16 mx-10">
+        <p className="md:text-[16px] lg:text-xl">
           <span className="font-semibold">Showing 1-12</span> Out Of 36 Products
         </p>
-        <button className="btn rounded-3xl md:text-xl font-normal">Sort By <FaAngleDown />
+        <button className="btn rounded-3xl md:text-[16px] lg:text-xl font-normal">Sort By <FaAngleDown />
         </button>
       </div>
 
-      <div className="grid xl:grid-cols-4 sm:grid-cols-2 xl:gap-10 sm:gap-6 gap-4 xl:mb-30 sm:mb-18 mb-8 xl:mt-8 mt-4 xl:mx-60 sm:mx-20 mx-10">
+      <div className="grid xl:grid-cols-4 sm:grid-cols-2 xl:gap-10 sm:gap-6 gap-4 xl:mb-30 sm:mb-18 mb-8 xl:mt-8 mt-4 xl:mx-60 md: sm:mx-16 mx-10">
 
         {allProduct?.length > 0 ? (
           allProduct.map(allProduct => {

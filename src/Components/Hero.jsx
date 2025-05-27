@@ -50,7 +50,7 @@ const Hero = () => {
                     >
                         {/* Text Content */}
                         <div className="w-full h-full flex items-center">
-                            <div className="w-full md:w-1/2 p-8 md:pl-12 lg:pl-20 flex flex-col justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-center md:text-left lg:ml-16 my-auto md:my-0">
+                            <div className="w-full md:w-1/2 p-8 md:pl-12 lg:pl-20 flex flex-col justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-center sm:text-left sm:ml-14 lg:ml-16 my-auto md:my-0">
                                 <h2 className="text-xl sm:text-4xl md:text-4xl xl:text-5xl font-semibold text-white hi-melody-font">NEW ARRIVALS ONLY</h2>
                                 <div className='delius-font'>
                                     <div className="flex items-center justify-center md:justify-start gap-2 sm:gap-4">

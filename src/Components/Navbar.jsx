@@ -22,16 +22,16 @@ const Navbar = () => {
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li>
-                            <Link to='/' end className={location.pathname === '/' ? 'active' : ''}>Shop</Link>
+                            <Link to='/' end className={`${location.pathname === '/' ? 'active' : ''} text-[17px] font-medium`}>Shop</Link>
                         </li>
                         <li>
-                            <Link to='/men' className={location.pathname === '/men' ? 'active' : ''}>Men</Link>
+                            <Link to='/men' className={`${location.pathname === '/men' ? 'active' : ''} text-[17px] font-medium`}>Men</Link>
                         </li>
                         <li>
-                            <Link to='/women' className={location.pathname === '/women' ? 'active' : ''}>Women</Link>
+                            <Link to='/women' className={`${location.pathname === '/women' ? 'active' : ''} text-[17px] font-medium`}>Women</Link>
                         </li>
                         <li>
-                            <Link to='/kids' className={location.pathname === '/kids' ? 'active' : ''}>Kids</Link>
+                            <Link to='/kids' className={`${location.pathname === '/kids' ? 'active' : ''} text-[17px] font-medium`}>Kids</Link>
                         </li>
                     </ul>
                 </div>

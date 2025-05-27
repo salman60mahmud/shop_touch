@@ -134,7 +134,7 @@ const CartItems = () => {
                             <input
                                 type="text"
                                 placeholder="Enter promo code"
-                                className="w-60 sm:w-72 md:w-96 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                className="w-58 sm:w-72 md:w-96 px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                             />
                             <button
                                 className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-r-lg transition-colors duration-200"
