@@ -46,8 +46,7 @@ const Hero = () => {
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat'
-                        }}
-                    >
+                        }}>
                         {/* Text Content */}
                         <div className="w-full h-full flex items-center">
                             <div className="w-full md:w-1/2 p-8 md:pl-12 lg:pl-20 flex flex-col justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 text-center sm:text-left sm:ml-14 lg:ml-16 my-auto md:my-0">
@@ -95,8 +94,7 @@ const Hero = () => {
             <button
                 className="absolute top-1/2 right-2 sm:right-4 md:right-6 transform -translate-y-1/2 bg-secondary hover:bg-secondary-content hover:text-secondary p-1 sm:p-2 md:p-3 rounded-full text-white transition-colors duration-300 z-10 hidden md:block"
                 type="button"
-                onClick={nextSlide}
-            >
+                onClick={nextSlide}>
                 <FaArrowRight className="text-lg sm:text-xl md:text-2xl" />
                 <span className="sr-only">Next</span>
             </button>

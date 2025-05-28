@@ -8,11 +8,13 @@ import Cart from './Pages/Cart'
 import LoginSignup from './Pages/LoginSignup'
 import Footer from './Components/Footer'
 import NotFound from './Components/NotFound'
+import Admin from './Pages/Admin'
 
 function App() {
   return (
     <div className='container'>
       <Navbar />
+      <Admin/>
       <Routes>
         <Route index element={<Shop />} />
         <Route path='men' element={<ShopCategory banner='/Images/banner_mens.png' category="men" />} />
