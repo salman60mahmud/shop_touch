@@ -2,19 +2,21 @@ import { Link } from 'react-router-dom';
 
 const AdminSidebar = () => {
     return (
-        <div className='flex md:flex-col md:justify-normal md:pt-8 md:gap-5 w-full md:max-w-68 md:h-[100vh] bg-white flex-row py-10 max-w-none h-auto justify-center'>
-            <Link to={'/addproduct'} style={{ textDecoration: "none" }}>
-                <div className='flex items-center justify-center py-3 md:mx-8 sm:mx-5 mx-3 px-3 gap-3 cursor-pointer text-blue-600 bg-[#f6f6f6] md:rounded-sm rounded-xl'>
-                    <img src="/Images/Product_Cart.svg" alt="Product_cart" />
-                    <p>Add Product</p>
-                </div>
-            </Link>
-            <Link to={'/listproduct'} style={{ textDecoration: "none" }}>
-                <div className='flex items-center justify-center py-3 md:mx-8 sm:mx-5 mx-3 px-3 gap-3 cursor-pointer text-blue-600 bg-[#f6f6f6] rounded-sm'>
-                    <img src="/Images/Product_list_icon.svg" alt="Product_list_icon" />
-                    <p>Product List</p>
-                </div>
-            </Link>
+        <div className='w-full md:w-64 lg:w-72 bg-white shadow-sm md:h-screen md:sticky md:top-0 md:overflow-y-auto'>
+            <div className='flex md:flex-col flex-row justify-center md:justify-start p-4 md:p-6 gap-2 md:gap-4'>
+                <Link to={'/addproduct'} className="w-full">
+                    <div className='flex items-center justify-center md:justify-start py-2 px-3 gap-3 cursor-pointer text-blue-600 bg-[#f6f6f6] hover:bg-blue-50 rounded-lg md:rounded-md transition-all'>
+                        <img src="/Images/Product_Cart.svg" alt="Product_cart" className="w-5 h-5" />
+                        <p className="text-sm md:text-base">Add Product</p>
+                    </div>
+                </Link>
+                <Link to={'/listproduct'} className="w-full">
+                    <div className='flex items-center justify-center md:justify-start py-2 px-3 gap-3 cursor-pointer text-blue-600 bg-[#f6f6f6] hover:bg-blue-50 rounded-lg md:rounded-md transition-all'>
+                        <img src="/Images/Product_list_icon.svg" alt="Product_list_icon" className="w-5 h-5" />
+                        <p className="text-sm md:text-base">Product List</p>
+                    </div>
+                </Link>
+            </div>
         </div>
     );
 };

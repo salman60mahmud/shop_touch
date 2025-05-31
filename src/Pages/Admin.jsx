@@ -10,11 +10,11 @@ const Admin = () => {
             {/* navbar */}
             <AdminNavbar />
             {/* admin part */}
-            <div className="flex flex-col md:flex-row">
+            <div className="flex flex-col md:flex-row min-h-screen bg-gray-50">
                 <AdminSidebar />
                 <Routes>
                     <Route path='/addproduct' element={<AddProduct />} />
-                    <Route path='/listproduct' element={<ProductList />} />
+                    <Route className="flex-1" path='/listproduct' element={<ProductList />} />
                 </Routes>
             </div>
         </div>

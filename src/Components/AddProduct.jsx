@@ -13,10 +13,10 @@ const AddProduct = () => {
     // Add product to database
     const changeHandler = (e) => {
         setProductDetails({ ...productDetails, [e.target.name]: e.target.value })
-    } //trigger add button
+    } // trigger add button
     const addProduct = async () => {
         console.log(productDetails);
-        // (send to backend)
+        // send to backend
         let responseData;
         let product = productDetails;
 
@@ -30,7 +30,7 @@ const AddProduct = () => {
                 Accept: 'application/json',
             }, body: formData,
         }).then((response) => response.json()).then((data) => { responseData = data });
-        
+
         if (responseData.success) {
             product.image = responseData.image_url;
             console.log(product);
@@ -43,10 +43,10 @@ const AddProduct = () => {
             }).then((response) => response.json()).then((data) => {
                 data.success ? alert("Product Added") : alert("Failed")
             })
-        }
-    }
+        }}
+
     return (
-        <div className="box-border md:w-3/5 mx-w-[800px] py-10 px-12 rounded-xl bg-[#f6f6f6]">
+        <div className="box-border md:w-3/5 mx-w-[800px] md:h-[800px] py-10 px-12 rounded-xl bg-[#f6f6f6]">
             <div>
                 <p className="md:text-lg">Product Title</p>
                 <input value={productDetails.name} onChange={changeHandler} className="border rounded-md py-2 pl-3 mt-1 w-full text-sm md:text-[16px]" type="text" name="name" placeholder="Type here" />
@@ -88,7 +88,6 @@ const AddProduct = () => {
                             className="max-w-[200px] max-h-[200px] object-contain border rounded-md" />
                         <button onClick={() => { addProduct() }} className="mt-2 md:mt-3 px-6 md:px-8 btn btn-warning font-medium text-sm md:text-[16px]">Add Now</button>
                     </div>)}
-
             </div>
         </div>
     );

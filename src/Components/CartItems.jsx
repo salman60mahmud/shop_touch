@@ -106,8 +106,7 @@ const CartItems = () => {
                                     </span>
                                     <FaPlus 
                                         className="text-xl cursor-pointer text-green-700 hover:text-green-900"
-                                        onClick={() => addToCart(product.id)}
-                                    />
+                                        onClick={() => addToCart(product.id)} />
                                 </div>
                                 
                                 <div className="col-span-2 text-right font-bold">

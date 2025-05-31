@@ -31,7 +31,6 @@ const NewCollections = () => {
                         </div>) 
                     )) : (
                     <p>No product found</p>)}
-
             </div>
         </div>
     );
