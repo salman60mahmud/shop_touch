@@ -26,8 +26,7 @@ const AdminNavbar = () => {
                         <img 
                             src="/Images/admin-profile.jpg" 
                             alt="Admin profile" 
-                            className="object-cover"
-                        />
+                            className="object-cover"/>
                     </div>
                 </div>
             </div>
