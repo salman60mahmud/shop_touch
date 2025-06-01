@@ -60,7 +60,7 @@ const ProductList = () => {
                         </div>
                     ))
                 ) : (
-                    <p className="text-center py-10">No products found</p>
+                    <p className="text-center text-red-700 md:text-2xl py-30">No products found</p>
                 )}
             </div>
 
@@ -97,7 +97,7 @@ const ProductList = () => {
                         </div>
                     ))
                 ) : (
-                    <p className="text-center py-10">No products found</p>
+                    <p className="text-center text-red-700 text-lg py-10">No products found</p>
                 )}
             </div>
         </div>
