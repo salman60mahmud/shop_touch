@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 const AdminSidebar = () => {
     return (
-        <div className='w-full md:w-64 lg:w-72 bg-white shadow-sm md:h-screen md:sticky md:top-0 md:overflow-y-auto'>
+        <div className='w-full md:w-64 lg:w-72 bg-white shadow-sm md md:sticky md:top-0 md:overflow-y-auto'>
             <div className='flex md:flex-col flex-row justify-center md:justify-start p-4 md:p-6 gap-2 md:gap-4'>
                 {/* Add Product */}
                 <NavLink

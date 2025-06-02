@@ -34,7 +34,7 @@ const ProductList = () => {
             </h1>
 
             {/* Desktop View - Description hidden until 2xl */}
-            <div className="hidden md:block">
+            <div className="hidden md:block mb-6">
                 <div className="grid grid-cols-12 gap-4 mb-4 font-medium text-sm lg:text-base border-b pb-3">
                     <p className="col-span-1 2xl:col-span-1 min-w-[60px]">Image</p>
                     <p className="col-span-4 2xl:col-span-3 min-w-[150px]">Title</p>
@@ -49,7 +49,7 @@ const ProductList = () => {
                     allproducts.map((product, index) => (
                         <div className="grid grid-cols-12 gap-4 items-center py-3 text-sm lg:text-base border-b" key={index}>
                             <img className="h-12 w-12 md:h-14 md:w-14 object-contain" src={product.image} alt={product.name} />
-                            <p className="col-span-4 2xl:col-span-3 truncate">{product.name}</p>
+                            <p className="col-span-4 2xl:col-span-3">{product.name}</p>
                             <p className="hidden 2xl:block col-span-4 line-clamp-2">{product.description}</p>
                             <p className="col-span-2 2xl:col-span-1 md:mx-5 2xl:mx-6">${product.old_price}</p>
                             <p className="col-span-2 2xl:col-span-1 md:mx-5 2xl:mx-7">${product.new_price}</p>
@@ -65,7 +65,7 @@ const ProductList = () => {
             </div>
 
             {/* Mobile View (never shows description) */}
-            <div className="md:hidden space-y-4">
+            <div className="md:hidden space-y-4 mb-6">
                 {allproducts?.length > 0 ? (
                     allproducts.map((product, index) => (
                         <div key={index} className="border rounded-lg p-4 shadow-sm">
