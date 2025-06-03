@@ -3,32 +3,43 @@ import { useState } from "react";
 const LoginSignup = () => {
 
     const [state, setState] = useState("Login");
-    const [formdata, setFormdata] = useState({
+    const [formData, setFormData] = useState({
         username: "", password: "", email: ""
     })
 
     const changeHandler = (e) => {
-        setFormdata({ ...formdata, [e.target.name]: [e.target.value] })
+        setFormData({ ...formData, [e.target.name]: e.target.value })
     }
 
     const login = async () => {
-        console.log("Login Function Executed", formdata);
+        console.log("Login Function Executed", formData);
     }
     const signup = async () => {
-        console.log("Login Function Executed", formdata);
-        let responseData;
-        await fetch('http://localhost:5000/signup', {
-            method: 'POST',
-            headers: {
-                Accept: 'application/form-data',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formdata),
-        }).then((response) => response.json())
-            .then((data) => responseData = data)
-        if (responseData.success) {
-            localStorage.setItem('auth-token', responseData.token);
-            window.location.replace("/");
+        try {
+            console.log("Signup Function Executed", formData);
+            const response = await fetch('http://localhost:5000/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    username: formData.username,
+                    email: formData.email,
+                    password: formData.password
+                }),
+            });
+            const responseData = await response.json();
+            if (!response.ok) {
+                throw new Error(responseData.errors || 'Signup failed');
+            }
+
+            if (responseData.success) {
+                localStorage.setItem('auth-token', responseData.token);
+                window.location.replace("/");
+            }
+        } catch (error) {
+            console.error("Signup Error:", error);
+            alert(error.message || "Signup failed. Please try again.");
         }
     }
 
@@ -42,13 +53,13 @@ const LoginSignup = () => {
 
 
                     {state === "Sign Up" ? <><label className="text-[18px] sm:text-xl">Name</label>
-                        <input type="text" name="username" value={formdata.username} onChange={changeHandler} className="input w-full" placeholder="Your Name" /></> : <></>}
+                        <input type="text" name="username" value={formData.username} onChange={changeHandler} className="input w-full" placeholder="Your Name" /></> : <></>}
 
                     <label className="text-[18px] sm:text-xl">Email</label>
-                    <input type="email" name="email" value={formdata.email} onChange={changeHandler} className="input w-full" placeholder="Email Address" />
+                    <input type="email" name="email" value={formData.email} onChange={changeHandler} className="input w-full" placeholder="Email Address" />
 
                     <label className="text-[18px] sm:text-xl">Password</label>
-                    <input type="password" name="password" value={formdata.password} onChange={changeHandler} className="input w-full" placeholder="Password" />
+                    <input type="password" name="password" value={formData.password} onChange={changeHandler} className="input w-full" placeholder="Password" />
 
                     <button onClick={() => { state === "Login" ? login() : signup() }} className="btn text-base-100 bg-blue-600 hover:bg-base-100 hover:text-blue-600 mt-5 tracking-wide hover:tracking-normal w-full">Continue</button>
 
